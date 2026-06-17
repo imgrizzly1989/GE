@@ -1,0 +1,11 @@
+<svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Garden Express">
+  <defs>
+    <linearGradient id="geLogo" x1="0" y1="0" x2="0" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#33D277"/>
+      <stop offset="1" stop-color="#06723A"/>
+    </linearGradient>
+  </defs>
+  <path d="M97 40 A45 45 0 1 0 96 84" fill="none" stroke="url(#geLogo)" stroke-width="19" stroke-linecap="round"/>
+  <path d="M54 70 L96 38" fill="none" stroke="url(#geLogo)" stroke-width="19" stroke-linecap="round"/>
+  <path d="M70 34 L100 34 L100 64" fill="none" stroke="url(#geLogo)" stroke-width="19" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
