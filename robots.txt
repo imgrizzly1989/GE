@@ -23,3 +23,6 @@ User-agent: Bingbot
 Allow: /
 
 Sitemap: https://www.gardenexpresse.com/sitemap.xml
+
+# AI-readable site summary
+# llms.txt: https://www.gardenexpresse.com/llms.txt
