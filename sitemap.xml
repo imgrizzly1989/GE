@@ -31,10 +31,22 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://www.gardenexpresse.com/delais-transport-maroc-europe.html</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
     <loc>https://www.gardenexpresse.com/devis-transport-international-maroc.html</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://www.gardenexpresse.com/documents-transport-import-export-maroc.html</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
   </url>
   <url>
     <loc>https://www.gardenexpresse.com/freight-forwarder-casablanca.html</loc>
@@ -79,6 +91,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.gardenexpresse.com/prix-transport-maroc-france.html</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
     <loc>https://www.gardenexpresse.com/services.html</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>weekly</changefreq>
@@ -97,7 +115,31 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.gardenexpresse.com/transport-agroalimentaire-maroc-europe.html</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gardenexpresse.com/transport-agrumes-maroc-europe.html</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.gardenexpresse.com/transport-bache-maroc.html</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gardenexpresse.com/transport-casablanca-madrid.html</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gardenexpresse.com/transport-casablanca-paris.html</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -148,6 +190,12 @@
     <loc>https://www.gardenexpresse.com/transport-maroc-afrique.html</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.gardenexpresse.com/transport-maroc-cote-ivoire.html</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
@@ -169,6 +217,18 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.gardenexpresse.com/transport-maroc-mauritanie.html</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gardenexpresse.com/transport-maroc-senegal.html</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.gardenexpresse.com/transport-palettes-maroc-europe.html</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>weekly</changefreq>
@@ -176,6 +236,12 @@
   </url>
   <url>
     <loc>https://www.gardenexpresse.com/transport-routier-international-maroc.html</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gardenexpresse.com/transport-tanger-madrid.html</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
