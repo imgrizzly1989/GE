@@ -1,0 +1,496 @@
+<!DOCTYPE html><html lang="fr"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<title>Garden Expresse — SEO Growth Blueprint</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0A0A0B;--panel:#141618;--leaf:#34D27B;--leaf2:#7CE39A;--mint:#A7D8A9;--forest2:#1F4A2C;--cream:#F3F6F1;--muted:#97A39A;--line:rgba(255,255,255,.09)}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--cream);line-height:1.65}
+a{color:var(--leaf)}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+header.top{padding:54px 0 28px;border-bottom:1px solid var(--line);background:radial-gradient(120% 130% at 50% 0%,rgba(52,210,123,.10),transparent 60%)}
+.kicker{font-size:12px;letter-spacing:.28em;text-transform:uppercase;color:var(--leaf);font-weight:700}
+h1{font-size:clamp(2rem,5vw,3rem);font-weight:900;letter-spacing:-.02em;line-height:1.05;margin:14px 0}
+.sub{color:rgba(243,246,241,.72);max-width:780px;font-size:1.05rem}
+.meta{margin-top:16px;color:var(--muted);font-size:.85rem}
+nav.toc{position:sticky;top:0;background:rgba(10,10,11,.93);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);z-index:20;padding:11px 0}
+nav.toc .wrap{display:flex;gap:7px;flex-wrap:wrap}
+nav.toc a{font-size:.78rem;color:rgba(243,246,241,.72);padding:6px 11px;border:1px solid var(--line);border-radius:999px;text-decoration:none}
+nav.toc a:hover{border-color:var(--leaf);color:#fff}
+section{padding:50px 0;border-bottom:1px solid var(--line)}
+h2{font-size:clamp(1.5rem,3.2vw,2.1rem);font-weight:800;letter-spacing:-.02em;margin-bottom:10px}
+h2 .n{color:var(--leaf);font-size:.66em;margin-right:10px}
+h3{font-size:1.18rem;margin:24px 0 8px;color:#fff}
+h4{font-size:1rem;margin:14px 0 4px}
+p{margin:11px 0;color:rgba(243,246,241,.83)}
+ul,ol{margin:10px 0 12px 20px;color:rgba(243,246,241,.83)} li{margin:5px 0}
+strong{color:#fff}
+.grid{display:grid;gap:14px;grid-template-columns:1fr;margin:16px 0}
+@media(min-width:680px){.grid.c2{grid-template-columns:1fr 1fr}.grid.c3{grid-template-columns:1fr 1fr 1fr}.grid.c4{grid-template-columns:repeat(4,1fr)}}
+.card{background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.012));border:1px solid var(--line);border-radius:14px;padding:20px}
+.card .big{font-size:1.8rem;font-weight:900;color:var(--leaf);letter-spacing:-.02em}
+.card h4{margin:4px 0 2px} .card p{font-size:.88rem;color:rgba(243,246,241,.66);margin:4px 0 0}
+table{width:100%;border-collapse:collapse;font-size:.86rem;margin:12px 0}
+th,td{text-align:left;padding:9px 11px;border-bottom:1px solid var(--line);vertical-align:top}
+thead th{background:rgba(52,210,123,.08);font-size:.76rem;letter-spacing:.02em;position:sticky;top:46px}
+tbody tr:hover{background:rgba(255,255,255,.025)}
+.pill{display:inline-block;font-size:.7rem;padding:2px 8px;border-radius:999px;border:1px solid var(--line)}
+.tx{background:rgba(52,210,123,.15);color:var(--leaf2);border-color:rgba(52,210,123,.3)}
+.co{background:rgba(124,227,154,.08);color:var(--mint)} .inf{background:rgba(255,255,255,.05);color:var(--muted)}
+.pr{font-weight:800;color:var(--leaf)}
+.bp{border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin:14px 0;background:rgba(255,255,255,.02)}
+.bp .slug{font-family:ui-monospace,Menlo,monospace;color:var(--leaf);font-size:.9rem}
+.bp .tag{font-size:.68rem;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:2px 8px;margin-left:6px}
+.kv{font-size:.86rem;margin:8px 0} .kv b{color:#fff}
+.tags span{display:inline-block;font-size:.74rem;background:rgba(52,210,123,.08);border:1px solid rgba(52,210,123,.22);color:var(--mint);border-radius:6px;padding:2px 7px;margin:2px 3px 2px 0}
+.note{background:rgba(52,210,123,.06);border:1px solid rgba(52,210,123,.25);border-radius:12px;padding:13px 15px;font-size:.86rem;color:rgba(243,246,241,.8)}
+pre{background:#0d0f11;border:1px solid var(--line);border-radius:12px;padding:14px;overflow:auto;font-size:.78rem;color:#cfe;line-height:1.5}
+.timeline{border-left:2px solid rgba(52,210,123,.4);margin-left:6px;padding-left:20px}
+.timeline .t{position:relative;margin:0 0 22px}
+.timeline .t::before{content:"";position:absolute;left:-27px;top:5px;width:11px;height:11px;border-radius:50%;background:var(--leaf);box-shadow:0 0 12px 2px rgba(52,210,123,.6)}
+.timeline .ph{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--leaf);font-weight:700}
+details{border:1px solid var(--line);border-radius:12px;margin:10px 0;background:rgba(255,255,255,.02)}
+summary{cursor:pointer;padding:14px 16px;font-weight:700;color:#fff;font-size:1rem}
+details[open]{padding-bottom:6px} details .body{padding:0 16px 14px}
+footer{padding:36px 0;color:var(--muted);font-size:.82rem;text-align:center}
+</style></head><body>
+<header class="top"><div class="wrap">
+<div class="kicker">SEO Growth Blueprint · Logistique Maroc – Europe – Afrique</div>
+<h1>Garden Expresse — Plan de domination SEO</h1>
+<p class="sub">Feuille de route complète pour devenir le résultat organique #1 sur Google pour le transport et la logistique entre le Maroc, l'Europe et l'Afrique. Architecture, univers de mots-clés, blueprints de pages, 200 articles, calendrier 12 mois, schémas et maillage.</p>
+<p class="meta">Document de travail interne (noindex) · 18 blueprints de pages · 200 idées d'articles · univers de 40 mots-clés prioritaires · estimations à calibrer avec Search Console / Ahrefs.</p>
+</div></header>
+
+<nav class="toc"><div class="wrap">
+<a href="#strat">Stratégie</a><a href="#kw">Mots-clés</a><a href="#archi">Architecture</a><a href="#pages">Blueprints pages</a>
+<a href="#blog">200 articles</a><a href="#topical">Autorité topique</a><a href="#gap">Gaps concurrents</a>
+<a href="#calendar">Calendrier 12 mois</a><a href="#schema">JSON-LD</a><a href="#linking">Maillage</a><a href="#prio">Priorisation</a>
+</div></nav>
+<main class="wrap">
+
+<section id="strat"><h2><span class="n">01</span>Stratégie & principe directeur</h2>
+<p>Le site est passé d'une page unique à un réseau de pages thématiques. La SERP des requêtes corridor (« transport maroc france », « transport frigorifique maroc espagne », « transitaire maroc ») est tenue par des sites fins (domaines exacts) et des annuaires ; les géants (DHL, DSV, Kuehne+Nagel) ne ciblent pas ces requêtes. <strong>La stratégie : occuper chaque combinaison service × corridor × ville avec un contenu plus profond, structuré (schema), et pensé pour Google et les moteurs IA — puis dominer le pack local marocain.</strong></p>
+<div class="grid c4"><div class="card"><div class="big">3</div><h4>piliers</h4><p>Autorité topique : Corridors · Services · Douane/Import-Export.</p></div><div class="card"><div class="big">18</div><h4>pages service</h4><p>Matrice service × corridor à produire/optimiser.</p></div><div class="card"><div class="big">200</div><h4>articles</h4><p>Programme éditorial sur 12 mois.</p></div><div class="card"><div class="big">#1</div><h4>objectif</h4><p>Pack local + organique Maroc–Europe–Afrique.</p></div></div>
+</section>
+
+<section id="kw"><h2><span class="n">02</span>Univers de mots-clés (priorisé)</h2>
+<p>Trié par score de priorité (intention × qualité de lead × revenu × facilité). Types : commercial, transactionnel, local, longue traîne, industrie. <strong>Base étendue de 680+ mots-clés FR/EN/ES disponible séparément.</strong></p>
+<div class="note">Volumes & difficultés = <b>estimations par bandes</b> (analyse SERP), à calibrer avec Ahrefs/Semrush/Search Console.</div>
+<table><thead><tr><th>Mot-clé</th><th>Type</th><th>Intention</th><th>Vol./mois</th><th>Difficulté</th><th>Qualité lead</th><th>Revenu</th><th>Prio</th></tr></thead><tbody><tr><td>transport maroc france</td><td>Commercial</td><td><span class='pill co'>Commercial</span></td><td>1k–2k</td><td>Moyenne</td><td>Élevée</td><td>Élevé</td><td class='pr'>95</td></tr><tr><td>devis transport maroc france</td><td>Transactionnel</td><td><span class='pill tx'>Transactionnel</span></td><td>50–100</td><td>Très faible</td><td>Élevée</td><td>Élevé</td><td class='pr'>95</td></tr><tr><td>transporteur maroc france</td><td>Transactionnel</td><td><span class='pill tx'>Transactionnel</span></td><td>300–600</td><td>Faible</td><td>Élevée</td><td>Élevé</td><td class='pr'>94</td></tr><tr><td>prix transport maroc france</td><td>Transactionnel</td><td><span class='pill tx'>Transactionnel</span></td><td>100–300</td><td>Faible</td><td>Élevée</td><td>Élevé</td><td class='pr'>93</td></tr><tr><td>transport frigorifique maroc france</td><td>Commercial</td><td><span class='pill co'>Commercial</span></td><td>100–300</td><td>Faible</td><td>Élevée</td><td>Élevé</td><td class='pr'>93</td></tr><tr><td>transport france maroc</td><td>Commercial</td><td><span class='pill co'>Commercial</span></td><td>600–1k</td><td>Moyenne</td><td>Élevée</td><td>Élevé</td><td class='pr'>92</td></tr><tr><td>transport maroc espagne</td><td>Commercial</td><td><span class='pill co'>Commercial</span></td><td>600–1k</td><td>Moyenne</td><td>Élevée</td><td>Élevé</td><td class='pr'>92</td></tr><tr><td>transport frigorifique maroc espagne</td><td>Commercial</td><td><span class='pill co'>Commercial</span></td><td>100–300</td><td>Faible</td><td>Élevée</td><td>Élevé</td><td class='pr'>92</td></tr><tr><td>transporteur maroc europe</td><td>Transactionnel</td><td><span class='pill tx'>Transactionnel</span></td><td>100–300</td><td>Faible</td><td>Élevée</td><td>Élevé</td><td class='pr'>90</td></tr><tr><td>tarif transport maroc espagne</td><td>Transactionnel</td><td><span class='pill tx'>Transactionnel</span></td><td>50–100</td><td>Faible</td><td>Élevée</td><td>Élevé</td><td class='pr'>90</td></tr><tr><td>groupage maroc france</td><td>Commercial</td><td><span class='pill co'>Commercial</span></td><td>100–300</td><td>Faible</td><td>Élevée</td><td>Élevé</td><td class='pr'>90</td></tr><tr><td>transport international maroc</td><td>Commercial</td><td><span class='pill co'>Commercial</span></td><td>300–600</td><td>Moyenne</td><td>Élevée</td><td>Élevé</td><td class='pr'>88</td></tr><tr><td>transport agrumes maroc</td><td>Industrie</td><td><span class='pill co'>Commercial</span></td><td>50–100</td><td>Faible</td><td>Élevée</td><td>Élevé</td><td class='pr'>88</td></tr><tr><td>transitaire maroc</td><td>Commercial</td><td><span class='pill co'>Commercial</span></td><td>300–600</td><td>Moyenne</td><td>Élevée</td><td>Élevé</td><td class='pr'>88</td></tr><tr><td>dédouanement maroc</td><td>Commercial</td><td><span class='pill co'>Commercial</span></td><td>300–600</td><td>Moyenne</td><td>Élevée</td><td>Élevé</td><td class='pr'>87</td></tr><tr><td>transport routier maroc europe</td><td>Commercial</td><td><span class='pill co'>Commercial</span></td><td>100–300</td><td>Faible</td><td>Élevée</td><td>Élevé</td><td class='pr'>86</td></tr><tr><td>camion frigorifique maroc espagne</td><td>Commercial</td><td><span class='pill co'>Commercial</span></td><td>50–100</td><td>Faible</td><td>Élevée</td><td>Élevé</td><td class='pr'>86</td></tr><tr><td>camion complet maroc france</td><td>Commercial</td><td><span class='pill co'>Commercial</span></td><td>50–100</td><td>Faible</td><td>Élevée</td><td>Élevé</td><td class='pr'>85</td></tr><tr><td>transporteur casablanca</td><td>Local</td><td><span class='pill co'>Commercial</span></td><td>100–300</td><td>Faible</td><td>Élevée</td><td>Élevé</td><td class='pr'>85</td></tr><tr><td>transport primeurs maroc europe</td><td>Industrie</td><td><span class='pill co'>Commercial</span></td><td>20–50</td><td>Faible</td><td>Élevée</td><td>Élevé</td><td class='pr'>84</td></tr><tr><td>transport palettes maroc france</td><td>Long-tail</td><td><span class='pill co'>Commercial</span></td><td>50–100</td><td>Faible</td><td>Élevée</td><td>Élevé</td><td class='pr'>84</td></tr><tr><td>transitaire casablanca</td><td>Local</td><td><span class='pill co'>Commercial</span></td><td>100–300</td><td>Faible</td><td>Élevée</td><td>Élevé</td><td class='pr'>84</td></tr><tr><td>transit douanier maroc</td><td>Commercial</td><td><span class='pill co'>Commercial</span></td><td>100–300</td><td>Faible</td><td>Élevée</td><td>Élevé</td><td class='pr'>83</td></tr><tr><td>transport agroalimentaire maroc europe</td><td>Industrie</td><td><span class='pill co'>Commercial</span></td><td>20–50</td><td>Faible</td><td>Élevée</td><td>Élevé</td><td class='pr'>83</td></tr><tr><td>transport express maroc europe</td><td>Commercial</td><td><span class='pill co'>Commercial</span></td><td>20–50</td><td>Faible</td><td>Élevée</td><td>Élevé</td><td class='pr'>82</td></tr><tr><td>commissionnaire de transport maroc</td><td>Commercial</td><td><span class='pill co'>Commercial</span></td><td>50–100</td><td>Faible</td><td>Élevée</td><td>Élevé</td><td class='pr'>82</td></tr><tr><td>transport international casablanca</td><td>Local</td><td><span class='pill co'>Commercial</span></td><td>50–100</td><td>Faible</td><td>Élevée</td><td>Élevé</td><td class='pr'>82</td></tr><tr><td>transport maroc france pas cher</td><td>Transactionnel</td><td><span class='pill tx'>Transactionnel</span></td><td>50–100</td><td>Faible</td><td>Moyenne</td><td>Moyen</td><td class='pr'>80</td></tr><tr><td>transporteur tanger</td><td>Local</td><td><span class='pill co'>Commercial</span></td><td>50–100</td><td>Faible</td><td>Élevée</td><td>Élevé</td><td class='pr'>80</td></tr><tr><td>transport agadir europe</td><td>Local</td><td><span class='pill co'>Commercial</span></td><td>20–50</td><td>Faible</td><td>Élevée</td><td>Élevé</td><td class='pr'>80</td></tr><tr><td>transport pharmaceutique maroc europe</td><td>Industrie</td><td><span class='pill co'>Commercial</span></td><td>10–50</td><td>Faible</td><td>Élevée</td><td>Élevé</td><td class='pr'>80</td></tr><tr><td>transport automobile maroc europe</td><td>Industrie</td><td><span class='pill co'>Commercial</span></td><td>10–50</td><td>Faible</td><td>Élevée</td><td>Élevé</td><td class='pr'>80</td></tr><tr><td>logistique e-commerce maroc france</td><td>Industrie</td><td><span class='pill co'>Commercial</span></td><td>20–50</td><td>Faible</td><td>Élevée</td><td>Élevé</td><td class='pr'>80</td></tr><tr><td>transport pièces détachées maroc europe</td><td>Industrie</td><td><span class='pill co'>Commercial</span></td><td>10–50</td><td>Faible</td><td>Élevée</td><td>Élevé</td><td class='pr'>78</td></tr><tr><td>transport bâché maroc</td><td>Industrie</td><td><span class='pill co'>Commercial</span></td><td>20–50</td><td>Faible</td><td>Moyenne</td><td>Moyen</td><td class='pr'>75</td></tr><tr><td>combien coûte un transport maroc france</td><td>Long-tail</td><td><span class='pill inf'>Informationnel</span></td><td>20–50</td><td>Très faible</td><td>Moyenne</td><td>Moyen</td><td class='pr'>72</td></tr><tr><td>délai transport maroc france</td><td>Long-tail</td><td><span class='pill inf'>Informationnel</span></td><td>20–50</td><td>Très faible</td><td>Moyenne</td><td>Moyen</td><td class='pr'>70</td></tr><tr><td>documents douane export maroc</td><td>Long-tail</td><td><span class='pill inf'>Informationnel</span></td><td>20–50</td><td>Faible</td><td>Moyenne</td><td>Moyen</td><td class='pr'>70</td></tr><tr><td>comment exporter des agrumes du maroc</td><td>Long-tail</td><td><span class='pill inf'>Informationnel</span></td><td>10–50</td><td>Faible</td><td>Moyenne</td><td>Moyen</td><td class='pr'>68</td></tr><tr><td>transport maroc france combien de temps</td><td>Long-tail</td><td><span class='pill inf'>Informationnel</span></td><td>10–50</td><td>Très faible</td><td>Faible</td><td>Faible</td><td class='pr'>62</td></tr></tbody></table>
+</section>
+
+<section id="archi"><h2><span class="n">03</span>Architecture du site</h2>
+<p>Structure en silo : hubs (Corridors, Services) → pages service×corridor → pages villes → articles de blog. Profondeur ≤ 3 clics.</p>
+<pre>/
+├─ /corridors                         (hub)
+│   ├─ /transport-maroc-france        ← P0
+│   ├─ /transport-maroc-espagne       ← P0
+│   ├─ /transport-maroc-belgique
+│   ├─ /transport-maroc-allemagne
+│   ├─ /transport-maroc-italie
+│   ├─ /transport-maroc-pays-bas
+│   └─ /transport-maroc-portugal
+├─ /services                          (hub)
+│   ├─ /transport-frigorifique-maroc-france|espagne|belgique
+│   ├─ /groupage-maroc-france|espagne|belgique
+│   ├─ /camion-complet-maroc-france|espagne
+│   ├─ /transport-express-maroc-europe
+│   ├─ /import-maroc-france
+│   └─ /export-maroc-france
+├─ /villes/  (casablanca, tanger, agadir … + city-pairs)
+├─ /dedouanement-maroc  ·  /transitaire-maroc
+└─ /blog/  (7 clusters, 200 articles)</pre>
+<p class="note">URLs « propres » (sans .html) recommandées. Les pages déjà en ligne utilisent l'extension .html ; à configurer côté hébergement si possible.</p>
+</section>
+
+<section id="pages"><h2><span class="n">04</span>Blueprints des 18 pages de service</h2>
+<p>Pour chaque page : SEO title, meta, H1, structure H2, FAQ (schema), maillage interne, volume rédactionnel et cluster sémantique.</p>
+<div class="bp">
+        <div><span class="slug">/transport-maroc-allemagne</span><span class="tag">Corridor routier</span><span class="tag">P1</span><span class="tag">À produire</span></div>
+        <div class="kv"><b>SEO Title :</b> Transport Maroc Allemagne : transporteur &amp; devis 2h | Garden Expresse <span class="tag">69 car.</span></div>
+        <div class="kv"><b>Meta description :</b> Transport routier Maroc → Allemagne : lots complets (FTL), groupage (LTL), frigorifique et bâché via Tanger Med. Devis sous 2h, dédouanement inclus. Berlin et toutes les villes. <span class="tag">177 car.</span></div>
+        <div class="kv"><b>H1 :</b> Transport Maroc → Allemagne</div>
+        <div class="kv"><b>Structure H2 :</b><ol><li>Le corridor Maroc–Allemagne en bref</li><li>Ce que nous transportons vers la Allemagne</li><li>Délais &amp; itinéraire (tableau)</li><li>Combien coûte un transport Maroc → Allemagne ?</li><li>Modes de transport disponibles (FTL, LTL, frigo, bâché)</li><li>Villes desservies (Francfort, Cologne, Hambourg, Munich…)</li><li>Comment ça marche en 4 étapes</li><li>FAQ</li><li>Corridors &amp; services liés</li></ol></div>
+        <div class="kv"><b>FAQ (schema FAQPage) :</b><ul><li><b>Combien de temps pour un transport Maroc → Allemagne ?</b> — Comptez 5–7 j de porte à porte via Tanger Med selon les villes et le type d&#x27;envoi.</li><li><b>Quel est le prix d&#x27;un transport Maroc Allemagne ?</b> — Le tarif dépend du volume, du poids, du type de remorque, des villes et de la saison. Devis chiffré sous 2 heures.</li><li><b>Le dédouanement est-il inclus ?</b> — Oui : formalités export Maroc et import UE (DUM, EX1, T1, documents sanitaires) gérées de bout en bout.</li><li><b>Livrez-vous partout en Allemagne ?</b> — Oui, Berlin et toutes les régions, depuis n&#x27;importe quelle ville du Maroc.</li></ul></div>
+        <div class="kv"><b>Mots-clés / cluster sémantique :</b><div class="tags"><span>transport maroc allemagne</span><span>transporteur maroc allemagne</span><span>transport routier maroc allemagne</span><span>prix transport maroc allemagne</span><span>groupage maroc allemagne</span><span>camion complet maroc allemagne</span><span>fret maroc allemagne</span><span>transport marchandises maroc allemagne</span></div></div>
+        <div class="kv"><b>Maillage interne :</b><div class="tags"><span>/ (accueil)</span><span>/services</span><span>/transport-frigorifique-maroc-europe</span><span>/services</span><span>/services</span><span>/corridors</span></div></div>
+        <div class="kv"><b>Volume rédactionnel cible :</b> 1400 mots</div>
+        </div><div class="bp">
+        <div><span class="slug">/transport-maroc-belgique</span><span class="tag">Corridor routier</span><span class="tag">P1</span><span class="tag">À produire</span></div>
+        <div class="kv"><b>SEO Title :</b> Transport Maroc Belgique : transporteur &amp; devis 2h | Garden Expresse <span class="tag">68 car.</span></div>
+        <div class="kv"><b>Meta description :</b> Transport routier Maroc → Belgique : lots complets (FTL), groupage (LTL), frigorifique et bâché via Tanger Med. Devis sous 2h, dédouanement inclus. Bruxelles et toutes les villes. <span class="tag">179 car.</span></div>
+        <div class="kv"><b>H1 :</b> Transport Maroc → Belgique</div>
+        <div class="kv"><b>Structure H2 :</b><ol><li>Le corridor Maroc–Belgique en bref</li><li>Ce que nous transportons vers la Belgique</li><li>Délais &amp; itinéraire (tableau)</li><li>Combien coûte un transport Maroc → Belgique ?</li><li>Modes de transport disponibles (FTL, LTL, frigo, bâché)</li><li>Villes desservies (Bruxelles, Anvers, Liège, Gand…)</li><li>Comment ça marche en 4 étapes</li><li>FAQ</li><li>Corridors &amp; services liés</li></ol></div>
+        <div class="kv"><b>FAQ (schema FAQPage) :</b><ul><li><b>Combien de temps pour un transport Maroc → Belgique ?</b> — Comptez 5–7 j de porte à porte via Tanger Med selon les villes et le type d&#x27;envoi.</li><li><b>Quel est le prix d&#x27;un transport Maroc Belgique ?</b> — Le tarif dépend du volume, du poids, du type de remorque, des villes et de la saison. Devis chiffré sous 2 heures.</li><li><b>Le dédouanement est-il inclus ?</b> — Oui : formalités export Maroc et import UE (DUM, EX1, T1, documents sanitaires) gérées de bout en bout.</li><li><b>Livrez-vous partout en Belgique ?</b> — Oui, Bruxelles et toutes les régions, depuis n&#x27;importe quelle ville du Maroc.</li></ul></div>
+        <div class="kv"><b>Mots-clés / cluster sémantique :</b><div class="tags"><span>transport maroc belgique</span><span>transporteur maroc belgique</span><span>transport routier maroc belgique</span><span>prix transport maroc belgique</span><span>groupage maroc belgique</span><span>camion complet maroc belgique</span><span>fret maroc belgique</span><span>transport marchandises maroc belgique</span></div></div>
+        <div class="kv"><b>Maillage interne :</b><div class="tags"><span>/ (accueil)</span><span>/services</span><span>/transport-frigorifique-maroc-belgique</span><span>/groupage-maroc-belgique</span><span>/services</span><span>/corridors</span></div></div>
+        <div class="kv"><b>Volume rédactionnel cible :</b> 1400 mots</div>
+        </div><div class="bp">
+        <div><span class="slug">/transport-maroc-espagne</span><span class="tag">Corridor routier</span><span class="tag">P0</span><span class="tag">✅ En ligne</span></div>
+        <div class="kv"><b>SEO Title :</b> Transport Maroc Espagne : transporteur &amp; devis 2h | Garden Expresse <span class="tag">67 car.</span></div>
+        <div class="kv"><b>Meta description :</b> Transport routier Maroc → Espagne : lots complets (FTL), groupage (LTL), frigorifique et bâché via Tanger Med. Devis sous 2h, dédouanement inclus. Madrid et toutes les villes. <span class="tag">175 car.</span></div>
+        <div class="kv"><b>H1 :</b> Transport Maroc → Espagne</div>
+        <div class="kv"><b>Structure H2 :</b><ol><li>Le corridor Maroc–Espagne en bref</li><li>Ce que nous transportons vers la Espagne</li><li>Délais &amp; itinéraire (tableau)</li><li>Combien coûte un transport Maroc → Espagne ?</li><li>Modes de transport disponibles (FTL, LTL, frigo, bâché)</li><li>Villes desservies (Madrid, Barcelone, Valence, Murcie…)</li><li>Comment ça marche en 4 étapes</li><li>FAQ</li><li>Corridors &amp; services liés</li></ol></div>
+        <div class="kv"><b>FAQ (schema FAQPage) :</b><ul><li><b>Combien de temps pour un transport Maroc → Espagne ?</b> — Comptez 1–4 j de porte à porte via Tanger Med selon les villes et le type d&#x27;envoi.</li><li><b>Quel est le prix d&#x27;un transport Maroc Espagne ?</b> — Le tarif dépend du volume, du poids, du type de remorque, des villes et de la saison. Devis chiffré sous 2 heures.</li><li><b>Le dédouanement est-il inclus ?</b> — Oui : formalités export Maroc et import UE (DUM, EX1, T1, documents sanitaires) gérées de bout en bout.</li><li><b>Livrez-vous partout en Espagne ?</b> — Oui, Madrid et toutes les régions, depuis n&#x27;importe quelle ville du Maroc.</li></ul></div>
+        <div class="kv"><b>Mots-clés / cluster sémantique :</b><div class="tags"><span>transport maroc espagne</span><span>transporteur maroc espagne</span><span>transport routier maroc espagne</span><span>prix transport maroc espagne</span><span>groupage maroc espagne</span><span>camion complet maroc espagne</span><span>fret maroc espagne</span><span>transport marchandises maroc espagne</span></div></div>
+        <div class="kv"><b>Maillage interne :</b><div class="tags"><span>/ (accueil)</span><span>/services</span><span>/transport-frigorifique-maroc-espagne</span><span>/groupage-maroc-espagne</span><span>/camion-complet-maroc-espagne</span><span>/corridors</span></div></div>
+        <div class="kv"><b>Volume rédactionnel cible :</b> 1400 mots</div>
+        </div><div class="bp">
+        <div><span class="slug">/transport-maroc-france</span><span class="tag">Corridor routier</span><span class="tag">P0</span><span class="tag">✅ En ligne</span></div>
+        <div class="kv"><b>SEO Title :</b> Transport Maroc France : transporteur &amp; devis 2h | Garden Expresse <span class="tag">66 car.</span></div>
+        <div class="kv"><b>Meta description :</b> Transport routier Maroc → France : lots complets (FTL), groupage (LTL), frigorifique et bâché via Tanger Med. Devis sous 2h, dédouanement inclus. Paris et toutes les villes. <span class="tag">173 car.</span></div>
+        <div class="kv"><b>H1 :</b> Transport Maroc → France</div>
+        <div class="kv"><b>Structure H2 :</b><ol><li>Le corridor Maroc–France en bref</li><li>Ce que nous transportons vers la France</li><li>Délais &amp; itinéraire (tableau)</li><li>Combien coûte un transport Maroc → France ?</li><li>Modes de transport disponibles (FTL, LTL, frigo, bâché)</li><li>Villes desservies (Paris, Lyon, Marseille, Lille…)</li><li>Comment ça marche en 4 étapes</li><li>FAQ</li><li>Corridors &amp; services liés</li></ol></div>
+        <div class="kv"><b>FAQ (schema FAQPage) :</b><ul><li><b>Combien de temps pour un transport Maroc → France ?</b> — Comptez 4–6 j de porte à porte via Tanger Med selon les villes et le type d&#x27;envoi.</li><li><b>Quel est le prix d&#x27;un transport Maroc France ?</b> — Le tarif dépend du volume, du poids, du type de remorque, des villes et de la saison. Devis chiffré sous 2 heures.</li><li><b>Le dédouanement est-il inclus ?</b> — Oui : formalités export Maroc et import UE (DUM, EX1, T1, documents sanitaires) gérées de bout en bout.</li><li><b>Livrez-vous partout en France ?</b> — Oui, Paris et toutes les régions, depuis n&#x27;importe quelle ville du Maroc.</li></ul></div>
+        <div class="kv"><b>Mots-clés / cluster sémantique :</b><div class="tags"><span>transport maroc france</span><span>transporteur maroc france</span><span>transport routier maroc france</span><span>prix transport maroc france</span><span>groupage maroc france</span><span>camion complet maroc france</span><span>fret maroc france</span><span>transport marchandises maroc france</span></div></div>
+        <div class="kv"><b>Maillage interne :</b><div class="tags"><span>/ (accueil)</span><span>/services</span><span>/transport-frigorifique-maroc-france</span><span>/groupage-maroc-france</span><span>/camion-complet-maroc-france</span><span>/corridors</span></div></div>
+        <div class="kv"><b>Volume rédactionnel cible :</b> 1400 mots</div>
+        </div><div class="bp">
+        <div><span class="slug">/transport-maroc-italie</span><span class="tag">Corridor routier</span><span class="tag">P1</span><span class="tag">À produire</span></div>
+        <div class="kv"><b>SEO Title :</b> Transport Maroc Italie : transporteur &amp; devis 2h | Garden Expresse <span class="tag">66 car.</span></div>
+        <div class="kv"><b>Meta description :</b> Transport routier Maroc → Italie : lots complets (FTL), groupage (LTL), frigorifique et bâché via Tanger Med. Devis sous 2h, dédouanement inclus. Rome et toutes les villes. <span class="tag">172 car.</span></div>
+        <div class="kv"><b>H1 :</b> Transport Maroc → Italie</div>
+        <div class="kv"><b>Structure H2 :</b><ol><li>Le corridor Maroc–Italie en bref</li><li>Ce que nous transportons vers la Italie</li><li>Délais &amp; itinéraire (tableau)</li><li>Combien coûte un transport Maroc → Italie ?</li><li>Modes de transport disponibles (FTL, LTL, frigo, bâché)</li><li>Villes desservies (Milan, Turin, Bologne, Rome…)</li><li>Comment ça marche en 4 étapes</li><li>FAQ</li><li>Corridors &amp; services liés</li></ol></div>
+        <div class="kv"><b>FAQ (schema FAQPage) :</b><ul><li><b>Combien de temps pour un transport Maroc → Italie ?</b> — Comptez 5–7 j de porte à porte via Tanger Med selon les villes et le type d&#x27;envoi.</li><li><b>Quel est le prix d&#x27;un transport Maroc Italie ?</b> — Le tarif dépend du volume, du poids, du type de remorque, des villes et de la saison. Devis chiffré sous 2 heures.</li><li><b>Le dédouanement est-il inclus ?</b> — Oui : formalités export Maroc et import UE (DUM, EX1, T1, documents sanitaires) gérées de bout en bout.</li><li><b>Livrez-vous partout en Italie ?</b> — Oui, Rome et toutes les régions, depuis n&#x27;importe quelle ville du Maroc.</li></ul></div>
+        <div class="kv"><b>Mots-clés / cluster sémantique :</b><div class="tags"><span>transport maroc italie</span><span>transporteur maroc italie</span><span>transport routier maroc italie</span><span>prix transport maroc italie</span><span>groupage maroc italie</span><span>camion complet maroc italie</span><span>fret maroc italie</span><span>transport marchandises maroc italie</span></div></div>
+        <div class="kv"><b>Maillage interne :</b><div class="tags"><span>/ (accueil)</span><span>/services</span><span>/transport-frigorifique-maroc-europe</span><span>/services</span><span>/services</span><span>/corridors</span></div></div>
+        <div class="kv"><b>Volume rédactionnel cible :</b> 1400 mots</div>
+        </div><div class="bp">
+        <div><span class="slug">/transport-maroc-pays-bas</span><span class="tag">Corridor routier</span><span class="tag">P1</span><span class="tag">À produire</span></div>
+        <div class="kv"><b>SEO Title :</b> Transport Maroc Pays-Bas : transporteur &amp; devis 2h | Garden Expresse <span class="tag">68 car.</span></div>
+        <div class="kv"><b>Meta description :</b> Transport routier Maroc → Pays-Bas : lots complets (FTL), groupage (LTL), frigorifique et bâché via Tanger Med. Devis sous 2h, dédouanement inclus. Amsterdam et toutes les villes. <span class="tag">179 car.</span></div>
+        <div class="kv"><b>H1 :</b> Transport Maroc → Pays-Bas</div>
+        <div class="kv"><b>Structure H2 :</b><ol><li>Le corridor Maroc–Pays-Bas en bref</li><li>Ce que nous transportons vers Pays-Bas</li><li>Délais &amp; itinéraire (tableau)</li><li>Combien coûte un transport Maroc → Pays-Bas ?</li><li>Modes de transport disponibles (FTL, LTL, frigo, bâché)</li><li>Villes desservies (Rotterdam, Amsterdam, Eindhoven, Utrecht…)</li><li>Comment ça marche en 4 étapes</li><li>FAQ</li><li>Corridors &amp; services liés</li></ol></div>
+        <div class="kv"><b>FAQ (schema FAQPage) :</b><ul><li><b>Combien de temps pour un transport Maroc → Pays-Bas ?</b> — Comptez 5–7 j de porte à porte via Tanger Med selon les villes et le type d&#x27;envoi.</li><li><b>Quel est le prix d&#x27;un transport Maroc Pays-Bas ?</b> — Le tarif dépend du volume, du poids, du type de remorque, des villes et de la saison. Devis chiffré sous 2 heures.</li><li><b>Le dédouanement est-il inclus ?</b> — Oui : formalités export Maroc et import UE (DUM, EX1, T1, documents sanitaires) gérées de bout en bout.</li><li><b>Livrez-vous partout en Pays-Bas ?</b> — Oui, Amsterdam et toutes les régions, depuis n&#x27;importe quelle ville du Maroc.</li></ul></div>
+        <div class="kv"><b>Mots-clés / cluster sémantique :</b><div class="tags"><span>transport maroc pays-bas</span><span>transporteur maroc pays-bas</span><span>transport routier maroc pays-bas</span><span>prix transport maroc pays-bas</span><span>groupage maroc pays-bas</span><span>camion complet maroc pays-bas</span><span>fret maroc pays-bas</span><span>transport marchandises maroc pays-bas</span></div></div>
+        <div class="kv"><b>Maillage interne :</b><div class="tags"><span>/ (accueil)</span><span>/services</span><span>/transport-frigorifique-maroc-europe</span><span>/services</span><span>/services</span><span>/corridors</span></div></div>
+        <div class="kv"><b>Volume rédactionnel cible :</b> 1400 mots</div>
+        </div><div class="bp">
+        <div><span class="slug">/transport-maroc-portugal</span><span class="tag">Corridor routier</span><span class="tag">P1</span><span class="tag">À produire</span></div>
+        <div class="kv"><b>SEO Title :</b> Transport Maroc Portugal : transporteur &amp; devis 2h | Garden Expresse <span class="tag">68 car.</span></div>
+        <div class="kv"><b>Meta description :</b> Transport routier Maroc → Portugal : lots complets (FTL), groupage (LTL), frigorifique et bâché via Tanger Med. Devis sous 2h, dédouanement inclus. Lisbonne et toutes les villes. <span class="tag">178 car.</span></div>
+        <div class="kv"><b>H1 :</b> Transport Maroc → Portugal</div>
+        <div class="kv"><b>Structure H2 :</b><ol><li>Le corridor Maroc–Portugal en bref</li><li>Ce que nous transportons vers Portugal</li><li>Délais &amp; itinéraire (tableau)</li><li>Combien coûte un transport Maroc → Portugal ?</li><li>Modes de transport disponibles (FTL, LTL, frigo, bâché)</li><li>Villes desservies (Lisbonne, Porto, Faro…)</li><li>Comment ça marche en 4 étapes</li><li>FAQ</li><li>Corridors &amp; services liés</li></ol></div>
+        <div class="kv"><b>FAQ (schema FAQPage) :</b><ul><li><b>Combien de temps pour un transport Maroc → Portugal ?</b> — Comptez 3–5 j de porte à porte via Tanger Med selon les villes et le type d&#x27;envoi.</li><li><b>Quel est le prix d&#x27;un transport Maroc Portugal ?</b> — Le tarif dépend du volume, du poids, du type de remorque, des villes et de la saison. Devis chiffré sous 2 heures.</li><li><b>Le dédouanement est-il inclus ?</b> — Oui : formalités export Maroc et import UE (DUM, EX1, T1, documents sanitaires) gérées de bout en bout.</li><li><b>Livrez-vous partout en Portugal ?</b> — Oui, Lisbonne et toutes les régions, depuis n&#x27;importe quelle ville du Maroc.</li></ul></div>
+        <div class="kv"><b>Mots-clés / cluster sémantique :</b><div class="tags"><span>transport maroc portugal</span><span>transporteur maroc portugal</span><span>transport routier maroc portugal</span><span>prix transport maroc portugal</span><span>groupage maroc portugal</span><span>camion complet maroc portugal</span><span>fret maroc portugal</span><span>transport marchandises maroc portugal</span></div></div>
+        <div class="kv"><b>Maillage interne :</b><div class="tags"><span>/ (accueil)</span><span>/services</span><span>/transport-frigorifique-maroc-europe</span><span>/services</span><span>/services</span><span>/corridors</span></div></div>
+        <div class="kv"><b>Volume rédactionnel cible :</b> 1400 mots</div>
+        </div><div class="bp">
+        <div><span class="slug">/transport-frigorifique-maroc-belgique</span><span class="tag">Frigorifique</span><span class="tag">P1</span><span class="tag">À produire</span></div>
+        <div class="kv"><b>SEO Title :</b> Transport Frigorifique Maroc Belgique : agrumes &amp; primeurs | Garden Expresse <span class="tag">76 car.</span></div>
+        <div class="kv"><b>Meta description :</b> Transport frigorifique Maroc → Belgique sous température dirigée : agrumes, primeurs, fruits rouges, produits de la mer. Chaîne du froid maîtrisée. Devis sous 2h. <span class="tag">162 car.</span></div>
+        <div class="kv"><b>H1 :</b> Transport Frigorifique Maroc → Belgique</div>
+        <div class="kv"><b>Structure H2 :</b><ol><li>Pourquoi le froid dirigé est critique sur ce corridor</li><li>Produits transportés (agrumes, primeurs, fruits rouges, mer)</li><li>Plages de température (tableau)</li><li>Délais &amp; traversée Tanger Med</li><li>Capacité en pleine campagne agrumes</li><li>Tarification frigorifique</li><li>FAQ</li><li>Services liés</li></ol></div>
+        <div class="kv"><b>FAQ (schema FAQPage) :</b><ul><li><b>Comment garantissez-vous la chaîne du froid ?</b> — Consigne de température constante surveillée en continu, du chargement à froid jusqu&#x27;à la livraison.</li><li><b>Transportez-vous les agrumes en pleine saison ?</b> — Oui, capacité dédiée d&#x27;octobre à mai (campagne agrumes/primeurs).</li><li><b>Gérez-vous le froid négatif (surgelés) ?</b> — Oui, de -18 à -25 °C en complément du froid positif.</li><li><b>Quels délais vers Belgique en frigo ?</b> — 5–7 j via Tanger Med, chaîne du froid maintenue.</li></ul></div>
+        <div class="kv"><b>Mots-clés / cluster sémantique :</b><div class="tags"><span>transport frigorifique maroc belgique</span><span>transport frigo maroc belgique</span><span>transport agrumes maroc belgique</span><span>transport primeurs maroc belgique</span><span>camion frigorifique maroc belgique</span><span>transport température dirigée maroc belgique</span><span>transport produits frais maroc belgique</span></div></div>
+        <div class="kv"><b>Maillage interne :</b><div class="tags"><span>/transport-maroc-belgique</span><span>/services</span><span>/transport-frigorifique-maroc-europe</span><span>/corridors</span><span>/ (accueil)</span></div></div>
+        <div class="kv"><b>Volume rédactionnel cible :</b> 1500 mots</div>
+        </div><div class="bp">
+        <div><span class="slug">/transport-frigorifique-maroc-espagne</span><span class="tag">Frigorifique</span><span class="tag">P0</span><span class="tag">✅ (hub frigo en ligne)</span></div>
+        <div class="kv"><b>SEO Title :</b> Transport Frigorifique Maroc Espagne : agrumes &amp; primeurs | Garden Expresse <span class="tag">75 car.</span></div>
+        <div class="kv"><b>Meta description :</b> Transport frigorifique Maroc → Espagne sous température dirigée : agrumes, primeurs, fruits rouges, produits de la mer. Chaîne du froid maîtrisée. Devis sous 2h. <span class="tag">161 car.</span></div>
+        <div class="kv"><b>H1 :</b> Transport Frigorifique Maroc → Espagne</div>
+        <div class="kv"><b>Structure H2 :</b><ol><li>Pourquoi le froid dirigé est critique sur ce corridor</li><li>Produits transportés (agrumes, primeurs, fruits rouges, mer)</li><li>Plages de température (tableau)</li><li>Délais &amp; traversée Tanger Med</li><li>Capacité en pleine campagne agrumes</li><li>Tarification frigorifique</li><li>FAQ</li><li>Services liés</li></ol></div>
+        <div class="kv"><b>FAQ (schema FAQPage) :</b><ul><li><b>Comment garantissez-vous la chaîne du froid ?</b> — Consigne de température constante surveillée en continu, du chargement à froid jusqu&#x27;à la livraison.</li><li><b>Transportez-vous les agrumes en pleine saison ?</b> — Oui, capacité dédiée d&#x27;octobre à mai (campagne agrumes/primeurs).</li><li><b>Gérez-vous le froid négatif (surgelés) ?</b> — Oui, de -18 à -25 °C en complément du froid positif.</li><li><b>Quels délais vers Espagne en frigo ?</b> — 1–4 j via Tanger Med, chaîne du froid maintenue.</li></ul></div>
+        <div class="kv"><b>Mots-clés / cluster sémantique :</b><div class="tags"><span>transport frigorifique maroc espagne</span><span>transport frigo maroc espagne</span><span>transport agrumes maroc espagne</span><span>transport primeurs maroc espagne</span><span>camion frigorifique maroc espagne</span><span>transport température dirigée maroc espagne</span><span>transport produits frais maroc espagne</span></div></div>
+        <div class="kv"><b>Maillage interne :</b><div class="tags"><span>/transport-maroc-espagne</span><span>/services</span><span>/transport-frigorifique-maroc-europe</span><span>/corridors</span><span>/ (accueil)</span></div></div>
+        <div class="kv"><b>Volume rédactionnel cible :</b> 1500 mots</div>
+        </div><div class="bp">
+        <div><span class="slug">/transport-frigorifique-maroc-france</span><span class="tag">Frigorifique</span><span class="tag">P0</span><span class="tag">✅ (hub frigo en ligne)</span></div>
+        <div class="kv"><b>SEO Title :</b> Transport Frigorifique Maroc France : agrumes &amp; primeurs | Garden Expresse <span class="tag">74 car.</span></div>
+        <div class="kv"><b>Meta description :</b> Transport frigorifique Maroc → France sous température dirigée : agrumes, primeurs, fruits rouges, produits de la mer. Chaîne du froid maîtrisée. Devis sous 2h. <span class="tag">160 car.</span></div>
+        <div class="kv"><b>H1 :</b> Transport Frigorifique Maroc → France</div>
+        <div class="kv"><b>Structure H2 :</b><ol><li>Pourquoi le froid dirigé est critique sur ce corridor</li><li>Produits transportés (agrumes, primeurs, fruits rouges, mer)</li><li>Plages de température (tableau)</li><li>Délais &amp; traversée Tanger Med</li><li>Capacité en pleine campagne agrumes</li><li>Tarification frigorifique</li><li>FAQ</li><li>Services liés</li></ol></div>
+        <div class="kv"><b>FAQ (schema FAQPage) :</b><ul><li><b>Comment garantissez-vous la chaîne du froid ?</b> — Consigne de température constante surveillée en continu, du chargement à froid jusqu&#x27;à la livraison.</li><li><b>Transportez-vous les agrumes en pleine saison ?</b> — Oui, capacité dédiée d&#x27;octobre à mai (campagne agrumes/primeurs).</li><li><b>Gérez-vous le froid négatif (surgelés) ?</b> — Oui, de -18 à -25 °C en complément du froid positif.</li><li><b>Quels délais vers France en frigo ?</b> — 4–6 j via Tanger Med, chaîne du froid maintenue.</li></ul></div>
+        <div class="kv"><b>Mots-clés / cluster sémantique :</b><div class="tags"><span>transport frigorifique maroc france</span><span>transport frigo maroc france</span><span>transport agrumes maroc france</span><span>transport primeurs maroc france</span><span>camion frigorifique maroc france</span><span>transport température dirigée maroc france</span><span>transport produits frais maroc france</span></div></div>
+        <div class="kv"><b>Maillage interne :</b><div class="tags"><span>/transport-maroc-france</span><span>/services</span><span>/transport-frigorifique-maroc-europe</span><span>/corridors</span><span>/ (accueil)</span></div></div>
+        <div class="kv"><b>Volume rédactionnel cible :</b> 1500 mots</div>
+        </div><div class="bp">
+        <div><span class="slug">/groupage-maroc-belgique</span><span class="tag">Groupage (LTL)</span><span class="tag">P1</span><span class="tag">À produire</span></div>
+        <div class="kv"><b>SEO Title :</b> Groupage Maroc Belgique : transport palettes &amp; charge partielle | Garden Expresse <span class="tag">81 car.</span></div>
+        <div class="kv"><b>Meta description :</b> Groupage Maroc ⇄ Belgique (LTL) : ne payez que la place occupée. Idéal PME et e-commerce, départs réguliers via Tanger Med. Devis sous 2h, dédouanement inclus. <span class="tag">159 car.</span></div>
+        <div class="kv"><b>H1 :</b> Groupage Maroc ⇄ Belgique</div>
+        <div class="kv"><b>Structure H2 :</b><ol><li>Qu&#x27;est-ce que le groupage (LTL) ?</li><li>Pourquoi choisir le groupage</li><li>Groupage vs lot complet (tableau comparatif)</li><li>Tarification au mètre linéaire / à la palette</li><li>Liaisons de groupage Maroc ⇄ Belgique</li><li>FAQ</li><li>Services liés</li></ol></div>
+        <div class="kv"><b>FAQ (schema FAQPage) :</b><ul><li><b>Qu&#x27;est-ce que le groupage ?</b> — La consolidation de marchandises de plusieurs clients dans une remorque : vous ne payez que la place occupée.</li><li><b>À partir de quel volume ?</b> — Dès une palette, voire quelques colis.</li><li><b>Le groupage est-il plus lent ?</b> — Légèrement, car il faut consolider, mais nettement plus économique pour les volumes moyens.</li><li><b>Comment est calculé le prix ?</b> — Selon la place occupée (mètre linéaire, palettes ou poids taxable). Devis sous 2 heures.</li></ul></div>
+        <div class="kv"><b>Mots-clés / cluster sémantique :</b><div class="tags"><span>groupage maroc belgique</span><span>groupage belgique maroc</span><span>transport palettes maroc belgique</span><span>transport partiel maroc belgique</span><span>LTL maroc belgique</span><span>transport colis maroc belgique</span><span>prix groupage maroc belgique</span></div></div>
+        <div class="kv"><b>Maillage interne :</b><div class="tags"><span>/transport-maroc-belgique</span><span>/services</span><span>/services</span><span>/corridors</span><span>/ (accueil)</span></div></div>
+        <div class="kv"><b>Volume rédactionnel cible :</b> 1300 mots</div>
+        </div><div class="bp">
+        <div><span class="slug">/groupage-maroc-espagne</span><span class="tag">Groupage (LTL)</span><span class="tag">P1</span><span class="tag">À produire</span></div>
+        <div class="kv"><b>SEO Title :</b> Groupage Maroc Espagne : transport palettes &amp; charge partielle | Garden Expresse <span class="tag">80 car.</span></div>
+        <div class="kv"><b>Meta description :</b> Groupage Maroc ⇄ Espagne (LTL) : ne payez que la place occupée. Idéal PME et e-commerce, départs réguliers via Tanger Med. Devis sous 2h, dédouanement inclus. <span class="tag">158 car.</span></div>
+        <div class="kv"><b>H1 :</b> Groupage Maroc ⇄ Espagne</div>
+        <div class="kv"><b>Structure H2 :</b><ol><li>Qu&#x27;est-ce que le groupage (LTL) ?</li><li>Pourquoi choisir le groupage</li><li>Groupage vs lot complet (tableau comparatif)</li><li>Tarification au mètre linéaire / à la palette</li><li>Liaisons de groupage Maroc ⇄ Espagne</li><li>FAQ</li><li>Services liés</li></ol></div>
+        <div class="kv"><b>FAQ (schema FAQPage) :</b><ul><li><b>Qu&#x27;est-ce que le groupage ?</b> — La consolidation de marchandises de plusieurs clients dans une remorque : vous ne payez que la place occupée.</li><li><b>À partir de quel volume ?</b> — Dès une palette, voire quelques colis.</li><li><b>Le groupage est-il plus lent ?</b> — Légèrement, car il faut consolider, mais nettement plus économique pour les volumes moyens.</li><li><b>Comment est calculé le prix ?</b> — Selon la place occupée (mètre linéaire, palettes ou poids taxable). Devis sous 2 heures.</li></ul></div>
+        <div class="kv"><b>Mots-clés / cluster sémantique :</b><div class="tags"><span>groupage maroc espagne</span><span>groupage espagne maroc</span><span>transport palettes maroc espagne</span><span>transport partiel maroc espagne</span><span>LTL maroc espagne</span><span>transport colis maroc espagne</span><span>prix groupage maroc espagne</span></div></div>
+        <div class="kv"><b>Maillage interne :</b><div class="tags"><span>/transport-maroc-espagne</span><span>/services</span><span>/camion-complet-maroc-espagne</span><span>/corridors</span><span>/ (accueil)</span></div></div>
+        <div class="kv"><b>Volume rédactionnel cible :</b> 1300 mots</div>
+        </div><div class="bp">
+        <div><span class="slug">/groupage-maroc-france</span><span class="tag">Groupage (LTL)</span><span class="tag">P0</span><span class="tag">✅ En ligne</span></div>
+        <div class="kv"><b>SEO Title :</b> Groupage Maroc France : transport palettes &amp; charge partielle | Garden Expresse <span class="tag">79 car.</span></div>
+        <div class="kv"><b>Meta description :</b> Groupage Maroc ⇄ France (LTL) : ne payez que la place occupée. Idéal PME et e-commerce, départs réguliers via Tanger Med. Devis sous 2h, dédouanement inclus. <span class="tag">157 car.</span></div>
+        <div class="kv"><b>H1 :</b> Groupage Maroc ⇄ France</div>
+        <div class="kv"><b>Structure H2 :</b><ol><li>Qu&#x27;est-ce que le groupage (LTL) ?</li><li>Pourquoi choisir le groupage</li><li>Groupage vs lot complet (tableau comparatif)</li><li>Tarification au mètre linéaire / à la palette</li><li>Liaisons de groupage Maroc ⇄ France</li><li>FAQ</li><li>Services liés</li></ol></div>
+        <div class="kv"><b>FAQ (schema FAQPage) :</b><ul><li><b>Qu&#x27;est-ce que le groupage ?</b> — La consolidation de marchandises de plusieurs clients dans une remorque : vous ne payez que la place occupée.</li><li><b>À partir de quel volume ?</b> — Dès une palette, voire quelques colis.</li><li><b>Le groupage est-il plus lent ?</b> — Légèrement, car il faut consolider, mais nettement plus économique pour les volumes moyens.</li><li><b>Comment est calculé le prix ?</b> — Selon la place occupée (mètre linéaire, palettes ou poids taxable). Devis sous 2 heures.</li></ul></div>
+        <div class="kv"><b>Mots-clés / cluster sémantique :</b><div class="tags"><span>groupage maroc france</span><span>groupage france maroc</span><span>transport palettes maroc france</span><span>transport partiel maroc france</span><span>LTL maroc france</span><span>transport colis maroc france</span><span>prix groupage maroc france</span></div></div>
+        <div class="kv"><b>Maillage interne :</b><div class="tags"><span>/transport-maroc-france</span><span>/services</span><span>/camion-complet-maroc-france</span><span>/corridors</span><span>/ (accueil)</span></div></div>
+        <div class="kv"><b>Volume rédactionnel cible :</b> 1300 mots</div>
+        </div><div class="bp">
+        <div><span class="slug">/camion-complet-maroc-espagne</span><span class="tag">Camion complet (FTL)</span><span class="tag">P1</span><span class="tag">À produire</span></div>
+        <div class="kv"><b>SEO Title :</b> Camion Complet Maroc Espagne (FTL) : lot complet dédié | Garden Expresse <span class="tag">72 car.</span></div>
+        <div class="kv"><b>Meta description :</b> Camion complet Maroc → Espagne : remorque entièrement dédiée, sans rupture de charge. Le plus rapide et sûr pour vos gros volumes. Bâché, frigo, plateau. Devis 2h. <span class="tag">163 car.</span></div>
+        <div class="kv"><b>H1 :</b> Camion Complet Maroc → Espagne (FTL)</div>
+        <div class="kv"><b>Structure H2 :</b><ol><li>Le lot complet : pour qui, pour quoi ?</li><li>Types de remorques (bâché, frigo, plateau, méga)</li><li>FTL vs groupage : que choisir ?</li><li>Délais &amp; sécurité de la marchandise</li><li>Tarification au trajet dédié</li><li>FAQ</li><li>Services liés</li></ol></div>
+        <div class="kv"><b>FAQ (schema FAQPage) :</b><ul><li><b>Qu&#x27;est-ce qu&#x27;un camion complet (FTL) ?</b> — Une remorque entièrement réservée à votre marchandise, sans transbordement : le plus rapide et le plus sûr.</li><li><b>Quels types de remorques ?</b> — Bâché/tautliner, frigorifique, plateau, méga selon votre marchandise.</li><li><b>FTL ou groupage ?</b> — FTL pour les gros volumes et les urgences ; groupage pour les volumes moyens.</li><li><b>Quel délai en FTL vers Espagne ?</b> — 1–4 j en direct via Tanger Med.</li></ul></div>
+        <div class="kv"><b>Mots-clés / cluster sémantique :</b><div class="tags"><span>camion complet maroc espagne</span><span>lot complet maroc espagne</span><span>FTL maroc espagne</span><span>transport complet maroc espagne</span><span>semi remorque maroc espagne</span><span>camion dédié maroc espagne</span></div></div>
+        <div class="kv"><b>Maillage interne :</b><div class="tags"><span>/transport-maroc-espagne</span><span>/groupage-maroc-espagne</span><span>/services</span><span>/corridors</span><span>/ (accueil)</span></div></div>
+        <div class="kv"><b>Volume rédactionnel cible :</b> 1200 mots</div>
+        </div><div class="bp">
+        <div><span class="slug">/camion-complet-maroc-france</span><span class="tag">Camion complet (FTL)</span><span class="tag">P1</span><span class="tag">À produire</span></div>
+        <div class="kv"><b>SEO Title :</b> Camion Complet Maroc France (FTL) : lot complet dédié | Garden Expresse <span class="tag">71 car.</span></div>
+        <div class="kv"><b>Meta description :</b> Camion complet Maroc → France : remorque entièrement dédiée, sans rupture de charge. Le plus rapide et sûr pour vos gros volumes. Bâché, frigo, plateau. Devis 2h. <span class="tag">162 car.</span></div>
+        <div class="kv"><b>H1 :</b> Camion Complet Maroc → France (FTL)</div>
+        <div class="kv"><b>Structure H2 :</b><ol><li>Le lot complet : pour qui, pour quoi ?</li><li>Types de remorques (bâché, frigo, plateau, méga)</li><li>FTL vs groupage : que choisir ?</li><li>Délais &amp; sécurité de la marchandise</li><li>Tarification au trajet dédié</li><li>FAQ</li><li>Services liés</li></ol></div>
+        <div class="kv"><b>FAQ (schema FAQPage) :</b><ul><li><b>Qu&#x27;est-ce qu&#x27;un camion complet (FTL) ?</b> — Une remorque entièrement réservée à votre marchandise, sans transbordement : le plus rapide et le plus sûr.</li><li><b>Quels types de remorques ?</b> — Bâché/tautliner, frigorifique, plateau, méga selon votre marchandise.</li><li><b>FTL ou groupage ?</b> — FTL pour les gros volumes et les urgences ; groupage pour les volumes moyens.</li><li><b>Quel délai en FTL vers France ?</b> — 4–6 j en direct via Tanger Med.</li></ul></div>
+        <div class="kv"><b>Mots-clés / cluster sémantique :</b><div class="tags"><span>camion complet maroc france</span><span>lot complet maroc france</span><span>FTL maroc france</span><span>transport complet maroc france</span><span>semi remorque maroc france</span><span>camion dédié maroc france</span></div></div>
+        <div class="kv"><b>Maillage interne :</b><div class="tags"><span>/transport-maroc-france</span><span>/groupage-maroc-france</span><span>/services</span><span>/corridors</span><span>/ (accueil)</span></div></div>
+        <div class="kv"><b>Volume rédactionnel cible :</b> 1200 mots</div>
+        </div><div class="bp">
+        <div><span class="slug">/transport-express-maroc-europe</span><span class="tag">Express / urgent</span><span class="tag">P1</span><span class="tag">À produire</span></div>
+        <div class="kv"><b>SEO Title :</b> Transport Express Maroc Europe : urgent &amp; time-critical | Garden Expresse <span class="tag">73 car.</span></div>
+        <div class="kv"><b>Meta description :</b> Transport express Maroc → Europe : solutions dédiées et prioritaires pour vos envois urgents et time-critical. Camion direct, suivi temps réel. Devis immédiat. <span class="tag">159 car.</span></div>
+        <div class="kv"><b>H1 :</b> Transport Express Maroc → Europe</div>
+        <div class="kv"><b>Structure H2 :</b><ol><li>Quand choisir l&#x27;express / time-critical</li><li>Solutions : direct dédié, double équipage, priorité douane</li><li>Secteurs servis (automobile, pharma, industrie)</li><li>Délais express par corridor</li><li>Tarification express</li><li>FAQ</li><li>Services liés</li></ol></div>
+        <div class="kv"><b>FAQ (schema FAQPage) :</b><ul><li><b>Qu&#x27;est-ce que le transport time-critical ?</b> — Un acheminement prioritaire et dédié pour les envois où chaque heure compte (arrêt de ligne, pièce manquante…).</li><li><b>Proposez-vous le double équipage ?</b> — Oui, pour réduire les temps de roulage et accélérer la livraison.</li><li><b>Gérez-vous la priorité en douane ?</b> — Oui, anticipation documentaire et passage prioritaire à Tanger Med.</li><li><b>Quels délais en express vers l&#x27;Europe ?</b> — Selon le corridor, plusieurs jours gagnés vs un acheminement standard.</li></ul></div>
+        <div class="kv"><b>Mots-clés / cluster sémantique :</b><div class="tags"><span>transport express maroc europe</span><span>transport urgent maroc europe</span><span>time critical maroc</span><span>transport express maroc france</span><span>livraison express maroc europe</span><span>camion express maroc</span></div></div>
+        <div class="kv"><b>Maillage interne :</b><div class="tags"><span>/transport-maroc-france</span><span>/transport-maroc-espagne</span><span>/services</span><span>/corridors</span><span>/ (accueil)</span></div></div>
+        <div class="kv"><b>Volume rédactionnel cible :</b> 1100 mots</div>
+        </div><div class="bp">
+        <div><span class="slug">/export-maroc-france</span><span class="tag">Import / Export</span><span class="tag">P1</span><span class="tag">À produire</span></div>
+        <div class="kv"><b>SEO Title :</b> Export Maroc France : transport &amp; formalités export | Garden Expresse <span class="tag">69 car.</span></div>
+        <div class="kv"><b>Meta description :</b> Exporter du Maroc vers la France : transport routier, formalités export marocaines, frigorifique pour l&#x27;agroalimentaire. De bout en bout, devis sous 2h. <span class="tag">152 car.</span></div>
+        <div class="kv"><b>H1 :</b> Export Maroc → France : transport &amp; formalités</div>
+        <div class="kv"><b>Structure H2 :</b><ol><li>Exporter du Maroc : ce qu&#x27;il faut savoir</li><li>Formalités export marocaines</li><li>Filières clés (agrumes, primeurs, textile)</li><li>Frigorifique pour l&#x27;agroalimentaire</li><li>Délais et coûts d&#x27;export</li><li>FAQ</li><li>Services liés</li></ol></div>
+        <div class="kv"><b>FAQ (schema FAQPage) :</b><ul><li><b>Quelles formalités pour exporter du Maroc ?</b> — Déclaration d&#x27;export, certificats d&#x27;origine et phytosanitaires pour l&#x27;agroalimentaire. Nous les gérons.</li><li><b>Le frigorifique est-il adapté à l&#x27;export agroalimentaire ?</b> — Oui, c&#x27;est notre spécialité : agrumes, primeurs, produits de la mer sous température dirigée.</li><li><b>Vers quelles villes françaises exportez-vous ?</b> — Paris, Lyon, Marseille, Perpignan (marché agroalimentaire) et toute la France.</li><li><b>Quel délai pour exporter ?</b> — 4–6 jours de porte à porte via Tanger Med.</li></ul></div>
+        <div class="kv"><b>Mots-clés / cluster sémantique :</b><div class="tags"><span>export maroc france</span><span>exporter du maroc</span><span>transport export maroc</span><span>formalités export maroc</span><span>export agroalimentaire maroc</span><span>export agrumes maroc france</span></div></div>
+        <div class="kv"><b>Maillage interne :</b><div class="tags"><span>/import-maroc-france</span><span>/transport-frigorifique-maroc-france</span><span>/transport-maroc-france</span><span>/services</span><span>/ (accueil)</span></div></div>
+        <div class="kv"><b>Volume rédactionnel cible :</b> 1400 mots</div>
+        </div><div class="bp">
+        <div><span class="slug">/import-maroc-france</span><span class="tag">Import / Export</span><span class="tag">P1</span><span class="tag">À produire</span></div>
+        <div class="kv"><b>SEO Title :</b> Import Maroc France : transport, dédouanement &amp; logistique | Garden Expresse <span class="tag">76 car.</span></div>
+        <div class="kv"><b>Meta description :</b> Importer du Maroc vers la France : transport routier, dédouanement (DUM, EX1, T1), documents et logistique de bout en bout. Agroalimentaire, textile, industrie. Devis 2h. <span class="tag">170 car.</span></div>
+        <div class="kv"><b>H1 :</b> Import Maroc → France : transport &amp; dédouanement</div>
+        <div class="kv"><b>Structure H2 :</b><ol><li>Importer du Maroc : étapes clés</li><li>Documents douaniers (DUM, EX1, certificats)</li><li>Produits importés (agroalimentaire, textile, pièces)</li><li>Incoterms &amp; responsabilités</li><li>Délais et coûts d&#x27;import</li><li>FAQ</li><li>Services liés</li></ol></div>
+        <div class="kv"><b>FAQ (schema FAQPage) :</b><ul><li><b>Quels documents pour importer du Maroc ?</b> — DUM, facture, EX1/T1, certificats d&#x27;origine et sanitaires selon la marchandise. Nous les préparons avec vous.</li><li><b>Gérez-vous le dédouanement à l&#x27;import en France ?</b> — Oui, avec nos partenaires en douane, de Tanger Med au passage de frontière.</li><li><b>Quels Incoterms recommandez-vous ?</b> — Selon votre besoin (EXW, FCA, DAP…) ; nous conseillons le plus adapté à votre flux.</li><li><b>Combien de temps pour importer ?</b> — 4–6 jours de porte à porte selon les villes et la marchandise.</li></ul></div>
+        <div class="kv"><b>Mots-clés / cluster sémantique :</b><div class="tags"><span>import maroc france</span><span>importer du maroc</span><span>dédouanement import maroc</span><span>transport import maroc france</span><span>documents import maroc</span><span>DUM EX1 maroc</span></div></div>
+        <div class="kv"><b>Maillage interne :</b><div class="tags"><span>/export-maroc-france</span><span>/transport-maroc-france</span><span>/services</span><span>/corridors</span><span>/ (accueil)</span></div></div>
+        <div class="kv"><b>Volume rédactionnel cible :</b> 1400 mots</div>
+        </div>
+</section>
+
+<section id="blog"><h2><span class="n">05</span>200 idées d'articles de blog</h2>
+<p>200 idées d'articles, organisées en 7 clusters thématiques. Chaque cluster renforce un pilier de l'autorité topique et se relie aux pages de service correspondantes.</p><details><summary>Fret &amp; transport routier — 30 articles</summary><div class='body'><ol><li>FTL ou LTL : comment choisir pour vos envois Maroc–Europe</li><li>Transport routier Maroc–Europe : tout comprendre sur Tanger Med – Algésiras</li><li>Combien de palettes dans un camion complet ? Le guide</li><li>Bâché, frigo ou plateau : quelle remorque pour quelle marchandise</li><li>Mètre linéaire vs palette : comment est calculé un groupage</li><li>Délais de transport Maroc–Europe : ce qui les fait varier</li><li>Comment bien préparer une palette pour l&#x27;export</li><li>Transport de marchandises dangereuses (ADR) Maroc–Europe</li><li>Suivi de fret : pourquoi la traçabilité change tout</li><li>Assurance transport marchandises : ce qu&#x27;il faut savoir</li><li>Transport hors gabarit Maroc–Europe : convoi exceptionnel</li><li>Optimiser ses coûts de transport routier international</li><li>Empotage et calage : éviter la casse en transport longue distance</li><li>Transport de groupage e-commerce Maroc–France : le guide</li><li>Pourquoi passer par un commissionnaire de transport</li><li>Transport routier Maroc–France : délais, prix et conseils</li><li>Transport routier Maroc–Espagne : délais, prix et conseils</li><li>Transport routier Maroc–Belgique : délais, prix et conseils</li><li>Transport routier Maroc–Allemagne : délais, prix et conseils</li><li>Transport routier Maroc–Italie : délais, prix et conseils</li><li>Transport routier Maroc–Pays-Bas : délais, prix et conseils</li><li>Transport routier Maroc–Portugal : délais, prix et conseils</li><li>Transport de palettes Maroc–Europe : standards EUR et dimensions</li><li>Camion complet Maroc–Europe : avantages et cas d&#x27;usage</li><li>Groupage international : 7 erreurs qui coûtent cher</li><li>Lead time logistique : comment le réduire sur l&#x27;axe Maroc–UE</li><li>Transport routier vs maritime Maroc–Europe : comparatif</li><li>Le rôle de Tanger Med dans la logistique Maroc–Europe</li><li>Transport retour à vide : comment l&#x27;éviter et payer moins</li><li>Cross-docking : accélérer vos flux Maroc–Europe</li></ol></div></details><details><summary>Transport frigorifique — 30 articles</summary><div class='body'><ol><li>Chaîne du froid : les règles d&#x27;or du transport frigorifique</li><li>Transport d&#x27;agrumes Maroc–Europe : température et bonnes pratiques</li><li>Campagne agrumes marocaine : anticiper la pénurie de frigos</li><li>Transport de fruits rouges : 0–4 °C sans rupture de froid</li><li>Primeurs marocains : logistique du champ au marché européen</li><li>Transport de produits de la mer Maroc–Europe</li><li>Froid positif vs froid négatif : quelle différence</li><li>Multi-températures : transporter plusieurs produits dans un frigo</li><li>Pré-refroidissement : pourquoi il est indispensable</li><li>Transport de produits laitiers et surgelés Maroc–Europe</li><li>Normes sanitaires UE pour l&#x27;agroalimentaire importé du Maroc</li><li>Comment éviter les ruptures de chaîne du froid à Tanger Med</li><li>Transport pharmaceutique sous température dirigée</li><li>Logistique du frais : KPI à suivre pour vos exports</li><li>Saisonnalité des primeurs : calendrier d&#x27;export Maroc</li><li>Transport frigorifique Maroc–France : ce qu&#x27;il faut savoir</li><li>Transport frigorifique Maroc–Espagne : ce qu&#x27;il faut savoir</li><li>Transport frigorifique Maroc–Belgique : ce qu&#x27;il faut savoir</li><li>Transport frigorifique Maroc–Allemagne : ce qu&#x27;il faut savoir</li><li>Transport frigorifique Maroc–Italie : ce qu&#x27;il faut savoir</li><li>Tomates, poivrons, courgettes : températures d&#x27;export idéales</li><li>Transport frigorifique : checklist qualité avant chargement</li><li>Capteurs et data loggers : prouver la chaîne du froid</li><li>Export de melons et pastèques du Maroc : logistique d&#x27;été</li><li>Transport de fleurs coupées Maroc–Europe</li><li>Gérer les pics de la campagne d&#x27;agrumes</li><li>Réduire le gaspillage alimentaire grâce au bon transport frigo</li><li>Frigorifique groupé : mutualiser pour les petits volumes</li><li>Transport de fraises marocaines vers l&#x27;Europe</li><li>Certificats phytosanitaires : le passage obligé de l&#x27;agroalimentaire</li></ol></div></details><details><summary>Douane &amp; dédouanement — 28 articles</summary><div class='body'><ol><li>Dédouanement Maroc : le guide complet pour les exportateurs</li><li>DUM, EX1, T1 : à quoi servent ces documents douaniers</li><li>Le régime TIR expliqué simplement</li><li>Transit douanier Maroc–Europe : comment ça marche</li><li>Certificat d&#x27;origine EUR.1 : l&#x27;accord Maroc–UE en pratique</li><li>Comment choisir son transitaire au Maroc</li><li>Droits de douane Maroc–UE : ce que dit l&#x27;accord d&#x27;association</li><li>Documents pour exporter de l&#x27;agroalimentaire du Maroc</li><li>Erreurs de douane qui bloquent vos camions (et comment les éviter)</li><li>Dédouanement à l&#x27;import en France : étapes et délais</li><li>Numéro EORI : pourquoi votre client européen en a besoin</li><li>TVA à l&#x27;import : fonctionnement pour les marchandises marocaines</li><li>Inspection sanitaire aux frontières UE : se préparer</li><li>Le rôle du déclarant en douane dans votre supply chain</li><li>Franchise et admission temporaire : optimiser vos flux</li><li>Contrôles douaniers à Tanger Med : comment ça se passe</li><li>Classer sa marchandise : le code SH expliqué</li><li>Incoterms 2020 : lequel choisir pour le Maroc</li><li>Litiges douaniers : comment réagir</li><li>Exporter vers le Royaume-Uni post-Brexit depuis le Maroc</li><li>Dématérialisation douanière au Maroc (PortNet)</li><li>Garanties et cautions en douane</li><li>Origine préférentielle : prouver l&#x27;origine marocaine</li><li>Marquage et étiquetage pour l&#x27;UE</li><li>Sanctions et marchandises sous restriction : vigilance</li><li>Audit douanier : préparer son entreprise</li><li>Le carnet ATA pour le matériel temporaire</li><li>Transit T1 vs T2 : différences pratiques</li></ol></div></details><details><summary>Import / Export — 28 articles</summary><div class='body'><ol><li>Comment importer du Maroc vers la France : guide pas à pas</li><li>Comment exporter ses produits du Maroc vers l&#x27;Europe</li><li>Trouver un fournisseur fiable au Maroc</li><li>Calculer son prix de revient à l&#x27;import depuis le Maroc</li><li>Les filières d&#x27;export marocaines les plus dynamiques</li><li>Importer du textile marocain : logistique et douane</li><li>Importer des pièces automobiles du Maroc</li><li>Sourcing au Maroc : avantages du nearshoring</li><li>Export e-commerce Maroc–Europe : du colis à la livraison</li><li>Conditionnement export : normes et bonnes pratiques</li><li>Financer son commerce international Maroc–Europe</li><li>Assurance-crédit export : sécuriser ses paiements</li><li>Réussir son premier import depuis le Maroc</li><li>Réglementation produits alimentaires importés en UE</li><li>Importer des produits cosmétiques marocains (argan, etc.)</li><li>Export de produits de la mer marocains : marché et logistique</li><li>Importer des fruits et légumes marocains : saisonnalité</li><li>Le marché de Perpignan : porte d&#x27;entrée des primeurs</li><li>Nearshoring automobile : le Maroc, hub industriel</li><li>Export d&#x27;huile d&#x27;argan : logistique et réglementation</li><li>Importer du Maroc en Belgique : spécificités</li><li>Importer du Maroc en Allemagne : ce qui change</li><li>Documents commerciaux export : facture, packing list, BL</li><li>Étude de marché avant d&#x27;importer du Maroc</li><li>Gérer les retours et la logistique inverse Maroc–Europe</li><li>Exporter vers les Pays-Bas via Rotterdam</li><li>Importer du Maroc au Portugal : corridor de proximité</li><li>Réussir une foire commerciale Maroc–Europe</li></ol></div></details><details><summary>Supply chain — 28 articles</summary><div class='body'><ol><li>Construire une supply chain résiliente Maroc–Europe</li><li>KPI logistiques à suivre absolument</li><li>Réduire ses coûts logistiques sans sacrifier le service</li><li>Just-in-time : risques et opportunités sur l&#x27;axe Maroc–UE</li><li>Prévision de la demande pour les flux saisonniers</li><li>Digitaliser sa supply chain : par où commencer</li><li>Gestion des stocks tampon au Maroc</li><li>Choisir un 3PL pour le corridor Maroc–Europe</li><li>S&amp;OP : aligner ventes et logistique</li><li>Empreinte carbone du transport routier : la réduire</li><li>Logistique du dernier kilomètre en Europe</li><li>Mutualisation des transports : payer moins, polluer moins</li><li>Cartographier les risques de sa chaîne logistique</li><li>Indicateur OTIF : livrer à temps et complet</li><li>Externaliser sa logistique : avantages et limites</li><li>Tour de contrôle logistique : visibilité bout en bout</li><li>Coût total de possession en logistique import</li><li>Gérer la saisonnalité agricole dans sa supply chain</li><li>Plan de continuité : que faire si Tanger Med sature</li><li>Lean logistics appliqué au corridor Maroc–Europe</li><li>ERP, TMS, WMS : quels outils pour piloter ses flux</li><li>Décarboner le transport Maroc–Europe : leviers concrets</li><li>Optimiser le taux de remplissage des camions</li><li>Indicateurs de performance fournisseur transport</li><li>Sécuriser ses approvisionnements en période de crise</li><li>Logistique collaborative entre chargeurs</li><li>Du port à l&#x27;usine : fluidifier la chaîne</li><li>RSE et transport durable Maroc–Europe : indicateurs clés</li></ol></div></details><details><summary>Commerce Maroc–Europe — 28 articles</summary><div class='body'><ol><li>Commerce Maroc–Europe : chiffres clés et tendances</li><li>L&#x27;accord d&#x27;association Maroc–UE expliqué aux entreprises</li><li>Pourquoi le Maroc devient un hub industriel pour l&#x27;Europe</li><li>Tanger Med : premier port de la Méditerranée, et après</li><li>Les zones franches marocaines : avantages pour l&#x27;export</li><li>Automobile au Maroc : un écosystème tourné vers l&#x27;Europe</li><li>Aéronautique marocaine : logistique d&#x27;une filière d&#x27;excellence</li><li>Le Maroc, premier exportateur d&#x27;agrumes vers l&#x27;UE ?</li><li>Textile marocain : reconquérir le marché européen</li><li>Nearshoring : l&#x27;Europe relocalise au Maroc</li><li>Investir dans la logistique au Maroc</li><li>Les corridors stratégiques Maroc–Europe</li><li>Énergies vertes : le Maroc et l&#x27;hydrogène pour l&#x27;Europe</li><li>Relations commerciales Maroc–France : état des lieux</li><li>Maroc–Espagne : le premier partenaire commercial</li><li>Maroc–Allemagne : opportunités industrielles</li><li>Maroc–Italie : échanges et logistique</li><li>Maroc–Benelux : flux et perspectives</li><li>Le dirham et le commerce extérieur marocain</li><li>Salons professionnels Maroc–Europe à ne pas manquer</li><li>Douane intelligente : la modernisation marocaine</li><li>Le plan d&#x27;accélération industrielle du Maroc</li><li>Agritech marocaine et exportation</li><li>Maroc–Portugal : un corridor de proximité sous-exploité</li><li>Les ports marocains au service de l&#x27;export</li><li>Maroc–UK post-Brexit : nouveau cadre commercial</li><li>Cap sur l&#x27;Afrique : le Maroc comme tremplin</li><li>Maroc–Europe : la révolution du e-commerce transfrontalier</li></ol></div></details><details><summary>Commerce Afrique–Europe — 28 articles</summary><div class='body'><ol><li>Le Maroc, hub logistique entre l&#x27;Afrique et l&#x27;Europe</li><li>Corridor Maroc–Afrique de l&#x27;Ouest : Dakar, Abidjan, Nouakchott</li><li>Transport Maroc–Sénégal : route et alternatives</li><li>Transport Maroc–Mauritanie : le corridor atlantique</li><li>Transport Maroc–Côte d&#x27;Ivoire : enjeux logistiques</li><li>ZLECAf : ce que la zone de libre-échange change</li><li>Réexport via le Maroc vers l&#x27;Afrique subsaharienne</li><li>Logistique Afrique–Europe : le rôle pivot du Maroc</li><li>Transport Maroc–Mali : défis et solutions</li><li>Transport Maroc–Ghana : opportunités</li><li>Le port de Dakhla Atlantique et l&#x27;axe africain</li><li>Chaîne du froid vers l&#x27;Afrique de l&#x27;Ouest</li><li>Douane et transit vers l&#x27;Afrique subsaharienne</li><li>Financer le commerce Afrique–Europe via le Maroc</li><li>Les ambitions africaines de la logistique marocaine</li><li>Transport Maroc–Guinée : ce qu&#x27;il faut savoir</li><li>Corridor transsaharien : réalité et perspectives</li><li>Hubs africains : Casablanca face à la concurrence</li><li>Assurance et risques sur les routes africaines</li><li>Exporter l&#x27;agroalimentaire marocain vers l&#x27;Afrique</li><li>Transit communautaire CEDEAO : les bases</li><li>Le Maroc et l&#x27;intégration logistique africaine</li><li>Réexpédition Europe→Afrique via Tanger Med</li><li>Transport de matériel BTP vers l&#x27;Afrique de l&#x27;Ouest</li><li>Diaspora et flux de marchandises Afrique–Europe</li><li>Digitaliser le fret Afrique–Europe</li><li>Sécuriser ses paiements en commerce africain</li><li>Cap sur l&#x27;Afrique : check-list de l&#x27;exportateur</li></ol></div></details>
+</section>
+
+<section id="topical"><h2><span class="n">06</span>Carte d'autorité topique</h2>
+<div class="grid c2">
+<div class="card"><h4>🛣️ Pilier — Corridors</h4><p>Hub corridors → 7 pays (2 sens) → villes & city-pairs. Entités : Tanger Med, Algésiras, Casablanca, douane, délais.</p></div>
+<div class="card"><h4>❄️ Pilier — Frigorifique</h4><p>Hub frigo → frigo×corridor → filières (agrumes, primeurs, fruits rouges, mer, pharma). Entités : chaîne du froid, température dirigée, reefer.</p></div>
+<div class="card"><h4>📦 Pilier — Modes (FTL/LTL/Express)</h4><p>Camion complet, groupage, express × corridors. Cluster : FTL vs LTL, mètre linéaire, time-critical.</p></div>
+<div class="card"><h4>🛃 Pilier — Douane & Import/Export</h4><p>Dédouanement, transitaire, transit (TIR/T1), DUM/EX1, EUR.1, Incoterms. Forte intention B2B.</p></div>
+<div class="card"><h4>🌍 Pilier — Maroc ⇄ Afrique</h4><p>Sénégal, Côte d'Ivoire, Mauritanie, Mali, Ghana. Le Maroc, hub Afrique–Europe, ZLECAf.</p></div>
+<div class="card"><h4>🏭 Pilier — Sectoriel</h4><p>Automobile, pharma, agroalimentaire, textile, e-commerce. Pages filière reliées aux corridors.</p></div>
+</div></section>
+
+<section id="gap"><h2><span class="n">07</span>Analyse des écarts (gaps) vs DHL, DB Schenker, DSV, Kuehne + Nagel, XPO Logistics, Geodis</h2>
+<p>Les généralistes mondiaux sont forts en autorité de domaine mais <strong>ne ciblent pas le corridor Maroc-spécifique en français</strong>. Ce sont des couloirs ouverts.</p>
+<table><thead><tr><th>Opportunité / gap</th><th>Situation concurrents</th><th>Action Garden Expresse</th><th>Potentiel revenu</th><th>Difficulté</th></tr></thead><tbody><tr><td>Corridor Maroc–pays (FR/ES/BE/DE/IT/NL/PT)</td><td>Aucune page dédiée par corridor</td><td>Pages corridor exact-match × 7 pays × 2 sens</td><td class='pr'>Très élevé</td><td>Faible</td></tr><tr><td>Service × corridor (frigo/groupage/FTL × pays)</td><td>Inexistant chez les généralistes</td><td>Matrice service×corridor (18 pages)</td><td class='pr'>Élevé</td><td>Faible</td></tr><tr><td>Frigorifique agrumes/primeurs Maroc→UE</td><td>Non ciblé en local FR</td><td>Pages frigo + guides campagne agrumes</td><td class='pr'>Élevé</td><td>Faible</td></tr><tr><td>Transitaire / dédouanement Maroc (B2B)</td><td>Pages génériques, pas Maroc-spécifiques</td><td>Page douane Maroc + cluster import/export</td><td class='pr'>Élevé</td><td>Moyenne</td></tr><tr><td>Contenu en français corridor-spécifique</td><td>Faible (orienté EN/corporate)</td><td>200 articles blog FR ciblés</td><td class='pr'>Élevé</td><td>Faible</td></tr><tr><td>Local pack Maroc (Casablanca/Tanger/Agadir)</td><td>Absents du pack local marocain</td><td>GBP + pages villes + NAP cohérent</td><td class='pr'>Très élevé</td><td>Faible</td></tr><tr><td>Pages ville-à-ville (Casa→Paris, Agadir→Perpignan)</td><td>Non couvert</td><td>Pages city-pairs légères</td><td class='pr'>Moyen</td><td>Faible</td></tr><tr><td>FAQ / schema riche orienté AIO</td><td>Limité</td><td>FAQPage + Service + LocalBusiness partout</td><td class='pr'>Moyen</td><td>Faible</td></tr></tbody></table>
+</section>
+
+<section id="calendar"><h2><span class="n">08</span>Calendrier de contenu — 12 mois (lead-gen)</h2>
+<div class="timeline"><div class="t"><div class="ph">Mois 1 — Fondations</div><p>Déployer pages P0 live + soumettre sitemap (GSC/Bing), créer Google Business Profile, lancer la collecte d&#x27;avis.</p><p style="color:var(--muted);font-size:.85rem">📦 Pages corridor FR/ES, GBP, 2 articles douane</p></div><div class="t"><div class="ph">Mois 2 — Corridors P1</div><p>Produire transport-maroc-belgique/allemagne/italie/pays-bas/portugal (2 sens).</p><p style="color:var(--muted);font-size:.85rem">📦 5 pages corridor + 4 articles fret</p></div><div class="t"><div class="ph">Mois 3 — Frigo &amp; campagne</div><p>Pages frigo×corridor + cluster agrumes/primeurs (pic campagne oct–mai).</p><p style="color:var(--muted);font-size:.85rem">📦 3 pages frigo + 6 articles frigorifique</p></div><div class="t"><div class="ph">Mois 4 — Services</div><p>camion-complet &amp; groupage × FR/ES, transport-express-maroc-europe.</p><p style="color:var(--muted);font-size:.85rem">📦 5 pages service + 4 articles supply chain</p></div><div class="t"><div class="ph">Mois 5 — Douane &amp; I/E</div><p>Pages import/export MA-FR + cluster douane (transitaire, dédouanement).</p><p style="color:var(--muted);font-size:.85rem">📦 2 pages + 8 articles douane</p></div><div class="t"><div class="ph">Mois 6 — Local &amp; villes</div><p>Pages villes (Casablanca, Tanger, Agadir) + city-pairs phares.</p><p style="color:var(--muted);font-size:.85rem">📦 4 pages locales + 4 articles commerce MA-UE</p></div><div class="t"><div class="ph">Mois 7 — EN &amp; ES</div><p>Versions EN (freight forwarding morocco→…) et ES (transporte marruecos→…) des corridors phares.</p><p style="color:var(--muted);font-size:.85rem">📦 6 pages multilingues + 4 articles</p></div><div class="t"><div class="ph">Mois 8 — Industrie</div><p>Pages sectorielles (automobile, pharma, agroalimentaire, e-commerce).</p><p style="color:var(--muted);font-size:.85rem">📦 4 pages filière + 6 articles</p></div><div class="t"><div class="ph">Mois 9 — Afrique</div><p>Corridors Maroc–Afrique (Sénégal, Côte d&#x27;Ivoire, Mauritanie).</p><p style="color:var(--muted);font-size:.85rem">📦 3 pages Afrique + 8 articles Afrique–Europe</p></div><div class="t"><div class="ph">Mois 10 — Autorité</div><p>Guide pilier « Exporter ses agrumes vers l&#x27;Europe » (lead-magnet), netlinking presse logistique.</p><p style="color:var(--muted);font-size:.85rem">📦 1 guide + 8 articles + backlinks</p></div><div class="t"><div class="ph">Mois 11 — Conversion</div><p>Optimiser CRO (formulaires, devis), pages comparatives, études de cas clients.</p><p style="color:var(--muted);font-size:.85rem">📦 Études de cas + 6 articles</p></div><div class="t"><div class="ph">Mois 12 — Consolidation</div><p>Optimisation via Search Console (pages position 5–15), maillage, refresh contenu.</p><p style="color:var(--muted);font-size:.85rem">📦 Optimisations + 6 articles</p></div></div>
+</section>
+
+<section id="schema"><h2><span class="n">09</span>Schémas JSON-LD (modèles prêts à l'emploi)</h2>
+<p>À insérer dans le &lt;head&gt; de chaque page concernée. Remplacer les valeurs « … » (adresse, géo, réseaux sociaux, avis).</p>
+<h3>Organization</h3><pre>{
+  &quot;@context&quot;: &quot;https://schema.org&quot;,
+  &quot;@type&quot;: &quot;Organization&quot;,
+  &quot;@id&quot;: &quot;https://www.gardenexpresse.com/#organization&quot;,
+  &quot;name&quot;: &quot;Garden Expresse&quot;,
+  &quot;url&quot;: &quot;https://www.gardenexpresse.com/&quot;,
+  &quot;logo&quot;: &quot;https://www.gardenexpresse.com/assets/logo.png&quot;,
+  &quot;email&quot;: &quot;contact@gardenexpresse.com&quot;,
+  &quot;telephone&quot;: &quot;+212650542999&quot;,
+  &quot;sameAs&quot;: [
+    &quot;https://www.linkedin.com/company/XXX&quot;,
+    &quot;https://www.instagram.com/XXX&quot;
+  ],
+  &quot;address&quot;: {
+    &quot;@type&quot;: &quot;PostalAddress&quot;,
+    &quot;addressLocality&quot;: &quot;Casablanca&quot;,
+    &quot;addressCountry&quot;: &quot;MA&quot;
+  },
+  &quot;areaServed&quot;: [
+    &quot;MA&quot;,
+    &quot;FR&quot;,
+    &quot;ES&quot;,
+    &quot;BE&quot;,
+    &quot;NL&quot;,
+    &quot;DE&quot;,
+    &quot;IT&quot;,
+    &quot;PT&quot;,
+    &quot;GB&quot;
+  ]
+}</pre><h3>LocalBusiness</h3><pre>{
+  &quot;@context&quot;: &quot;https://schema.org&quot;,
+  &quot;@type&quot;: [
+    &quot;LocalBusiness&quot;,
+    &quot;MovingCompany&quot;
+  ],
+  &quot;@id&quot;: &quot;https://www.gardenexpresse.com/#localbusiness&quot;,
+  &quot;name&quot;: &quot;Garden Expresse&quot;,
+  &quot;image&quot;: &quot;https://www.gardenexpresse.com/assets/logo.png&quot;,
+  &quot;url&quot;: &quot;https://www.gardenexpresse.com/&quot;,
+  &quot;telephone&quot;: &quot;+212650542999&quot;,
+  &quot;priceRange&quot;: &quot;€€&quot;,
+  &quot;address&quot;: {
+    &quot;@type&quot;: &quot;PostalAddress&quot;,
+    &quot;streetAddress&quot;: &quot;…&quot;,
+    &quot;addressLocality&quot;: &quot;Casablanca&quot;,
+    &quot;postalCode&quot;: &quot;…&quot;,
+    &quot;addressCountry&quot;: &quot;MA&quot;
+  },
+  &quot;geo&quot;: {
+    &quot;@type&quot;: &quot;GeoCoordinates&quot;,
+    &quot;latitude&quot;: &quot;33.5731&quot;,
+    &quot;longitude&quot;: &quot;-7.5898&quot;
+  },
+  &quot;openingHoursSpecification&quot;: [
+    {
+      &quot;@type&quot;: &quot;OpeningHoursSpecification&quot;,
+      &quot;dayOfWeek&quot;: [
+        &quot;Monday&quot;,
+        &quot;Tuesday&quot;,
+        &quot;Wednesday&quot;,
+        &quot;Thursday&quot;,
+        &quot;Friday&quot;
+      ],
+      &quot;opens&quot;: &quot;08:30&quot;,
+      &quot;closes&quot;: &quot;18:30&quot;
+    }
+  ],
+  &quot;aggregateRating&quot;: {
+    &quot;@type&quot;: &quot;AggregateRating&quot;,
+    &quot;ratingValue&quot;: &quot;4.9&quot;,
+    &quot;reviewCount&quot;: &quot;27&quot;
+  }
+}</pre><h3>Service</h3><pre>{
+  &quot;@context&quot;: &quot;https://schema.org&quot;,
+  &quot;@type&quot;: &quot;Service&quot;,
+  &quot;name&quot;: &quot;Transport routier Maroc → France&quot;,
+  &quot;serviceType&quot;: &quot;Transport routier international de marchandises&quot;,
+  &quot;provider&quot;: {
+    &quot;@id&quot;: &quot;https://www.gardenexpresse.com/#organization&quot;
+  },
+  &quot;areaServed&quot;: [
+    {
+      &quot;@type&quot;: &quot;Country&quot;,
+      &quot;name&quot;: &quot;Maroc&quot;
+    },
+    {
+      &quot;@type&quot;: &quot;Country&quot;,
+      &quot;name&quot;: &quot;France&quot;
+    }
+  ],
+  &quot;description&quot;: &quot;Transport de marchandises Maroc → France : FTL, LTL, frigorifique, bâché via Tanger Med. Dédouanement et suivi inclus.&quot;,
+  &quot;offers&quot;: {
+    &quot;@type&quot;: &quot;Offer&quot;,
+    &quot;priceCurrency&quot;: &quot;EUR&quot;,
+    &quot;availability&quot;: &quot;https://schema.org/InStock&quot;,
+    &quot;url&quot;: &quot;https://www.gardenexpresse.com/transport-maroc-france&quot;
+  }
+}</pre><h3>FAQPage</h3><pre>{
+  &quot;@context&quot;: &quot;https://schema.org&quot;,
+  &quot;@type&quot;: &quot;FAQPage&quot;,
+  &quot;mainEntity&quot;: [
+    {
+      &quot;@type&quot;: &quot;Question&quot;,
+      &quot;name&quot;: &quot;Combien de temps pour un transport Maroc → France ?&quot;,
+      &quot;acceptedAnswer&quot;: {
+        &quot;@type&quot;: &quot;Answer&quot;,
+        &quot;text&quot;: &quot;4 à 6 jours de porte à porte via Tanger Med selon les villes.&quot;
+      }
+    },
+    {
+      &quot;@type&quot;: &quot;Question&quot;,
+      &quot;name&quot;: &quot;Le dédouanement est-il inclus ?&quot;,
+      &quot;acceptedAnswer&quot;: {
+        &quot;@type&quot;: &quot;Answer&quot;,
+        &quot;text&quot;: &quot;Oui : formalités export Maroc et import France gérées de bout en bout.&quot;
+      }
+    }
+  ]
+}</pre><h3>BreadcrumbList</h3><pre>{
+  &quot;@context&quot;: &quot;https://schema.org&quot;,
+  &quot;@type&quot;: &quot;BreadcrumbList&quot;,
+  &quot;itemListElement&quot;: [
+    {
+      &quot;@type&quot;: &quot;ListItem&quot;,
+      &quot;position&quot;: 1,
+      &quot;name&quot;: &quot;Accueil&quot;,
+      &quot;item&quot;: &quot;https://www.gardenexpresse.com/&quot;
+    },
+    {
+      &quot;@type&quot;: &quot;ListItem&quot;,
+      &quot;position&quot;: 2,
+      &quot;name&quot;: &quot;Corridors&quot;,
+      &quot;item&quot;: &quot;https://www.gardenexpresse.com/corridors&quot;
+    },
+    {
+      &quot;@type&quot;: &quot;ListItem&quot;,
+      &quot;position&quot;: 3,
+      &quot;name&quot;: &quot;Transport Maroc France&quot;,
+      &quot;item&quot;: &quot;https://www.gardenexpresse.com/transport-maroc-france&quot;
+    }
+  ]
+}</pre>
+</section>
+
+<section id="linking"><h2><span class="n">10</span>Plan de maillage interne</h2>
+<ul>
+<li><strong>Hubs → enfants → hubs.</strong> /corridors et /services pointent vers chaque page ; chaque page renvoie vers son hub (fil d'Ariane + bloc « liés »).</li>
+<li><strong>Liens latéraux par corridor.</strong> /transport-maroc-france ↔ /transport-frigorifique-maroc-france ↔ /groupage-maroc-france ↔ /camion-complet-maroc-france.</li>
+<li><strong>Service → corridor → ville.</strong> Chaque page service lie 3–4 villes pertinentes (city-pairs) ; chaque ville remonte vers le corridor.</li>
+<li><strong>Blog → argent.</strong> Chaque article cite 2–3 pages de service avec des ancres riches (ex. « transport frigorifique Maroc → Espagne »).</li>
+<li><strong>Accueil (autorité max).</strong> Nav + footer relient les pages prioritaires (déjà en place).</li>
+<li><strong>Ancres descriptives</strong> riches en mots-clés, jamais « cliquez ici ». Profondeur ≤ 3 clics.</li>
+</ul>
+<div class="note"><b>Règle pratique :</b> chaque nouvelle page reçoit au moins 3 liens entrants internes (hub + 1 page sœur + 1 article) avant publication.</div>
+</section>
+
+<section id="prio"><h2><span class="n">11</span>Priorisation & quick wins</h2>
+<h3>Ordre de production (ROI décroissant)</h3>
+<ol>
+<li><strong>P0 — déjà en ligne</strong> : Maroc⇄France, Maroc⇄Espagne, frigorifique, groupage MA-FR. → Indexer (GSC) + Google Business Profile.</li>
+<li><strong>P1 — produire en priorité</strong> : douane/transitaire Maroc, frigo×Espagne/France, import/export MA-FR, camion-complet & groupage ×FR/ES, transport-express.</li>
+<li><strong>P1 — corridors restants</strong> : Belgique, Allemagne, Italie, Pays-Bas, Portugal (2 sens).</li>
+<li><strong>P2</strong> : pages villes & city-pairs, versions EN/ES, corridors Afrique.</li>
+</ol>
+<h3>Quick wins (0–30 jours)</h3>
+<ul>
+<li>Soumettre <b>sitemap.xml</b> à Google Search Console + Bing ; « demander l'indexation » des pages live.</li>
+<li>Créer/optimiser le <b>Google Business Profile</b> (Casablanca) → déclenche le pack local.</li>
+<li>Collecter <b>15–25 avis</b> + ajouter le schema <b>AggregateRating</b>.</li>
+<li>Publier 3 articles douane/prix/délais reliant les pages corridor.</li>
+<li>Produire la page <b>/dedouanement-maroc</b> (intention B2B très forte, lead qualifié).</li>
+</ul>
+<h3>Priorisation des mots-clés (4 axes)</h3>
+<p>Score = f(<b>intention</b> transactionnelle &gt; commerciale &gt; info ; <b>qualité de lead</b> ; <b>difficulté</b> inversée ; <b>potentiel de revenu</b>). Les « devis/prix transport maroc + pays », « transitaire/dédouanement maroc » et « transport frigorifique + corridor » concentrent le meilleur ratio lead/effort.</p>
+</section>
+
+</main>
+<footer>Garden Expresse — SEO Growth Blueprint · Document interne (noindex). Estimations à calibrer avec Search Console / Ahrefs / Semrush. Objectif : #1 organique Maroc–Europe–Afrique.</footer>
+</body></html>
