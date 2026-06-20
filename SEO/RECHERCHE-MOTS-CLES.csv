@@ -1,0 +1,40 @@
+mot_cle,langue,intention,service,pays,corridor,importance,difficulte_estimee,page_cible,priorite
+commissionnaire de transport Maroc,FR,Commerciale locale,commissionnaire de transport,Maroc,Maroc national,Très élevée,Moyenne,/commissionnaire-transport-maroc.html,P0
+commissionnaire de transport Casablanca,FR,Commerciale locale,commissionnaire de transport,Maroc,Casablanca,Très élevée,Moyenne,/commissionnaire-transport-casablanca.html,P0
+freight forwarder Morocco,EN,Commerciale internationale,freight forwarding,Morocco,Morocco global,Très élevée,Moyenne,/en/freight-forwarder-morocco.html,P0
+freight forwarder Casablanca,EN,Locale internationale,freight forwarding,Morocco,Casablanca,Élevée,Moyenne,/en/freight-forwarder-casablanca.html,P1
+transitaire Maroc,FR,Commerciale locale,transit / douane,Maroc,Maroc national,Très élevée,Moyenne à élevée,/transitaire-maroc.html,P0
+transitaire Casablanca,FR,Commerciale locale,transit / douane,Maroc,Casablanca,Très élevée,Moyenne,/transitaire-casablanca.html,P0
+société de transport international Maroc,FR,Commerciale,transport international,Maroc,Maroc-Europe-Afrique,Très élevée,Moyenne,/transport-international-maroc.html,P0
+entreprise de transport Maroc Europe,FR,Commerciale,transport international,"Maroc, Europe",Maroc-Europe,Très élevée,Moyenne,/transport-maroc-europe.html,P0
+transport Maroc Europe,FR,Commerciale,transport routier,"Maroc, Europe",Maroc-Europe,Très élevée,Moyenne,/transport-maroc-europe.html,P0
+transport Europe Maroc,FR,Commerciale,transport routier,"Europe, Maroc",Europe-Maroc,Très élevée,Moyenne,/transport-europe-maroc.html,P0
+transport Maroc Afrique,FR,Commerciale,transport routier,"Maroc, Afrique",Maroc-Afrique,Élevée,Faible à moyenne,/transport-maroc-afrique.html,P1
+transport routier international Maroc,FR,Commerciale,transport routier international,Maroc,International,Très élevée,Moyenne,/transport-routier-international-maroc.html,P0
+transport frigorifique Maroc,FR,Commerciale service,frigorifique,Maroc,National/international,Très élevée,Moyenne,/transport-frigorifique-maroc.html,P0
+transport frigorifique Maroc Europe,FR,Commerciale service+corridor,frigorifique,"Maroc, Europe",Maroc-Europe,Très élevée,Faible à moyenne,/transport-frigorifique-maroc-europe.html,P0 existante
+transport sous température dirigée Maroc,FR,Commerciale service,température dirigée,Maroc,National/international,Élevée,Faible à moyenne,/transport-temperature-dirigee-maroc.html,P1
+transport bâché Maroc,FR,Commerciale service,transport bâché,Maroc,National/international,Élevée,Faible,/transport-bache-maroc.html,P1
+affrètement camion Maroc,FR,Transactionnelle,affrètement,Maroc,Maroc national,Très élevée,Faible à moyenne,/affretement-camion-maroc.html,P0
+affréteur transport Maroc,FR,Commerciale,affrètement,Maroc,Maroc national,Élevée,Moyenne,/affreteur-transport-maroc.html,P1
+trouver un camion Maroc,FR,Transactionnelle,bourse de fret / affrètement,Maroc,Maroc national,Très élevée,Faible,/trouver-camion-maroc.html,P0
+trouver un transporteur Maroc,FR,Transactionnelle,bourse de fret / affrètement,Maroc,Maroc national,Très élevée,Faible à moyenne,/trouver-transporteur-maroc.html,P0
+transport poids lourd Maroc,FR,Commerciale,poids lourd,Maroc,National/international,Moyenne,Moyenne,/transport-poids-lourd-maroc.html,P2
+transport semi-remorque Maroc,FR,Commerciale service,semi-remorque,Maroc,National/international,Élevée,Faible,/transport-semi-remorque-maroc.html,P1
+transport FTL Maroc,FR/EN,Commerciale service,FTL,Maroc,National/international,Élevée,Faible,/transport-ftl-maroc.html,P1
+transport LTL Maroc,FR/EN,Commerciale service,LTL,Maroc,National/international,Élevée,Faible,/transport-ltl-maroc.html,P1
+groupage Maroc Europe,FR,Commerciale service+corridor,groupage,"Maroc, Europe",Maroc-Europe,Très élevée,Faible à moyenne,/groupage-maroc-europe.html,P0
+groupage Maroc France,FR,Commerciale service+corridor,groupage,"Maroc, France",Maroc-France,Très élevée,Faible,/groupage-maroc-france.html,P0 existante
+transport palettes Maroc Europe,FR,Commerciale service+corridor,palettes,"Maroc, Europe",Maroc-Europe,Élevée,Faible,/transport-palettes-maroc-europe.html,P1
+transport import export Maroc,FR,Commerciale,import-export,Maroc,International,Élevée,Moyenne,/transport-import-export-maroc.html,P1
+logistique Maroc Europe,FR,Commerciale,logistique,"Maroc, Europe",Maroc-Europe,Élevée,Moyenne,/logistique-maroc-europe.html,P1
+logistique Maroc Afrique,FR,Commerciale,logistique,"Maroc, Afrique",Maroc-Afrique,Moyenne,Faible à moyenne,/logistique-maroc-afrique.html,P2
+devis transport international Maroc,FR,Transactionnelle,devis transport,Maroc,International,Très élevée,Faible à moyenne,/devis-transport-international-maroc.html,P0
+transport Maroc France,FR,Commerciale corridor,transport routier,"Maroc, France",Maroc-France,Très élevée,Moyenne,/transport-maroc-france.html,P0 existante
+transport France Maroc,FR,Commerciale corridor,transport routier,"France, Maroc",France-Maroc,Très élevée,Moyenne,/transport-france-maroc.html,P0 existante
+transport Maroc Espagne,FR,Commerciale corridor,transport routier,"Maroc, Espagne",Maroc-Espagne,Très élevée,Moyenne,/transport-maroc-espagne.html,P0 existante
+transport Espagne Maroc,FR,Commerciale corridor,transport routier,"Espagne, Maroc",Espagne-Maroc,Très élevée,Moyenne,/transport-espagne-maroc.html,P0 existante
+transport agrumes Maroc Europe,FR,Commerciale sectorielle,agroalimentaire frigorifique,"Maroc, Europe",Maroc-Europe,Élevée,Faible,/transport-agrumes-maroc-europe.html,P1
+transport fruits et légumes Maroc Europe,FR,Commerciale sectorielle,agroalimentaire frigorifique,"Maroc, Europe",Maroc-Europe,Élevée,Faible,/transport-fruits-legumes-maroc-europe.html,P1
+transport Casablanca Paris,FR,Locale/corridor,ville à ville,"Maroc, France",Casablanca-Paris,Moyenne,Faible,/transport-casablanca-paris.html,P2
+transport Tanger Madrid,FR,Locale/corridor,ville à ville,"Maroc, Espagne",Tanger-Madrid,Moyenne,Faible,/transport-tanger-madrid.html,P2
