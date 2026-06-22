@@ -40,13 +40,13 @@
     <loc>https://www.gardenexpresse.com/devis-export-maroc-europe.html</loc>
     <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.gardenexpresse.com/devis-import-europe-maroc.html</loc>
     <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.gardenexpresse.com/devis-transport-international-maroc.html</loc>
@@ -89,6 +89,12 @@
     <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gardenexpresse.com/garden-expresse-maroc.html</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
   </url>
   <url>
     <loc>https://www.gardenexpresse.com/groupage-europe-maroc.html</loc>
@@ -262,7 +268,7 @@
     <loc>https://www.gardenexpresse.com/transport-europe-maroc.html</loc>
     <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.gardenexpresse.com/transport-france-maroc.html</loc>
@@ -346,7 +352,7 @@
     <loc>https://www.gardenexpresse.com/transport-maroc-europe.html</loc>
     <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.gardenexpresse.com/transport-maroc-france.html</loc>

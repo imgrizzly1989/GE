@@ -23,8 +23,7 @@
 <link rel="stylesheet" href="assets/ge.css" />
 
 <!-- ===================== DONNÉES STRUCTURÉES (JSON-LD) ===================== -->
-<script type="application/ld+json">
-{
+<script type="application/ld+json">{
   "@context": "https://schema.org",
   "@graph": [
     {
@@ -34,47 +33,134 @@
       "url": "https://www.gardenexpresse.com/",
       "email": "contact@gardenexpresse.com",
       "telephone": "+212650542999",
-      "areaServed": ["MA", "FR", "ES", "PT", "BE", "DE", "IT", "NL", "GB"],
-      "address": { "@type": "PostalAddress", "addressLocality": "Casablanca", "addressCountry": "MA" }
+      "areaServed": [
+        "MA",
+        "FR",
+        "ES",
+        "PT",
+        "BE",
+        "DE",
+        "IT",
+        "NL",
+        "GB"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Casablanca",
+        "addressCountry": "MA"
+      },
+      "alternateName": [
+        "GardenExpresse",
+        "Garden Expresse Maroc",
+        "GardenExpresse Logistics",
+        "Garden Expresse Logistique",
+        "Garden Expresse Transport"
+      ],
+      "legalName": "Garden Expresse",
+      "knowsAbout": [
+        "transport international",
+        "logistique Maroc",
+        "freight forwarding Morocco",
+        "commissionnaire de transport Maroc",
+        "transport Maroc Europe",
+        "transport Europe Maroc"
+      ]
     },
     {
       "@type": "Service",
       "name": "Transport routier Maroc → France",
       "serviceType": "Transport routier international de marchandises",
-      "provider": { "@id": "https://www.gardenexpresse.com/#organization" },
+      "provider": {
+        "@id": "https://www.gardenexpresse.com/#organization"
+      },
       "areaServed": [
-        { "@type": "Country", "name": "Maroc" },
-        { "@type": "Country", "name": "France" }
+        {
+          "@type": "Country",
+          "name": "Maroc"
+        },
+        {
+          "@type": "Country",
+          "name": "France"
+        }
       ],
       "description": "Transport de marchandises du Maroc vers la France : lots complets (FTL), groupage (LTL), transport frigorifique et bâché, via Tanger Med. Dédouanement et suivi inclus.",
-      "offers": { "@type": "Offer", "priceCurrency": "EUR", "availability": "https://schema.org/InStock", "url": "https://www.gardenexpresse.com/transport-maroc-france.html" }
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "url": "https://www.gardenexpresse.com/transport-maroc-france.html"
+      }
     },
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://www.gardenexpresse.com/" },
-        { "@type": "ListItem", "position": 2, "name": "Corridors", "item": "https://www.gardenexpresse.com/corridors.html" },
-        { "@type": "ListItem", "position": 3, "name": "Transport Maroc France", "item": "https://www.gardenexpresse.com/transport-maroc-france.html" }
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Accueil",
+          "item": "https://www.gardenexpresse.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Corridors",
+          "item": "https://www.gardenexpresse.com/corridors.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Transport Maroc France",
+          "item": "https://www.gardenexpresse.com/transport-maroc-france.html"
+        }
       ]
     },
     {
       "@type": "FAQPage",
       "mainEntity": [
-        { "@type": "Question", "name": "Combien de temps dure un transport Maroc → France ?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Comptez en moyenne 4 à 6 jours de porte à porte selon la ville de chargement et de livraison. La traction routière depuis Casablanca ou Tanger vers Paris ou Lyon prend 3 à 4 jours de roulage une fois la traversée Tanger Med – Algésiras effectuée, à laquelle s'ajoutent l'enlèvement et les formalités douanières." } },
-        { "@type": "Question", "name": "Quel est le prix d'un transport Maroc France ?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Le tarif dépend du volume, du poids, du type de remorque (bâché, frigorifique) et des villes desservies. Le groupage se facture au mètre linéaire ou à la palette, le lot complet au trajet. Garden Expresse met le marché du fret en concurrence pour obtenir le tarif adapté et renvoie un devis chiffré rapidement." } },
-        { "@type": "Question", "name": "Le dédouanement est-il inclus ?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Oui. Nous gérons les formalités douanières à l'export marocain et à l'import en France (DUM, EX1, T1, documents sanitaires pour l'agroalimentaire) avec nos partenaires en douane à Tanger Med et au passage de frontière." } },
-        { "@type": "Question", "name": "Transportez-vous les produits frais et agroalimentaires ?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Oui, c'est l'une de nos spécialités. Nos semi-remorques frigorifiques maintiennent la température dirigée (fruits, légumes, agrumes, produits de la mer) du chargement à la livraison, avec respect de la chaîne du froid et traçabilité." } },
-        { "@type": "Question", "name": "Depuis quelles villes du Maroc partez-vous ?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Nous chargeons partout au Maroc : Casablanca, Tanger, Agadir, Marrakech, Kénitra, Fès, Rabat, ainsi que le sud (Laâyoune, Dakhla). La livraison couvre toute la France métropolitaine." } }
+        {
+          "@type": "Question",
+          "name": "Combien de temps dure un transport Maroc → France ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Comptez en moyenne 4 à 6 jours de porte à porte selon la ville de chargement et de livraison. La traction routière depuis Casablanca ou Tanger vers Paris ou Lyon prend 3 à 4 jours de roulage une fois la traversée Tanger Med – Algésiras effectuée, à laquelle s'ajoutent l'enlèvement et les formalités douanières."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quel est le prix d'un transport Maroc France ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Le tarif dépend du volume, du poids, du type de remorque (bâché, frigorifique) et des villes desservies. Le groupage se facture au mètre linéaire ou à la palette, le lot complet au trajet. Garden Expresse met le marché du fret en concurrence pour obtenir le tarif adapté et renvoie un devis chiffré rapidement."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Le dédouanement est-il inclus ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui. Nous gérons les formalités douanières à l'export marocain et à l'import en France (DUM, EX1, T1, documents sanitaires pour l'agroalimentaire) avec nos partenaires en douane à Tanger Med et au passage de frontière."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Transportez-vous les produits frais et agroalimentaires ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui, c'est l'une de nos spécialités. Nos semi-remorques frigorifiques maintiennent la température dirigée (fruits, légumes, agrumes, produits de la mer) du chargement à la livraison, avec respect de la chaîne du froid et traçabilité."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Depuis quelles villes du Maroc partez-vous ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nous chargeons partout au Maroc : Casablanca, Tanger, Agadir, Marrakech, Kénitra, Fès, Rabat, ainsi que le sud (Laâyoune, Dakhla). La livraison couvre toute la France métropolitaine."
+          }
+        }
       ]
     }
   ]
-}
-</script>
+}</script>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18254908613"></script>
 <script>
