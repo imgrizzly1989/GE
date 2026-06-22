@@ -116,7 +116,7 @@ h1,h2,h3,h4{ line-height:1.12; letter-spacing:-0.02em; font-weight:800; }
 @media(min-width:768px){ .topbar{ display:block; } }
 .logo{ display:flex; align-items:center; gap:14px; flex-shrink:0; }
 .logo-mark{ filter:drop-shadow(0 0 6px rgba(52,210,123,0)); transition:filter .5s; }
-.logo-mark img{ width:72px; height:72px; object-fit:contain; transition:width .35s var(--ease),height .35s var(--ease); }
+.logo-mark img{ width:auto; height:76px; object-fit:contain; transition:height .35s var(--ease); }
 .logo:hover .logo-mark{ filter:drop-shadow(0 0 10px rgba(52,210,123,.55)); }
 .logo-name{ font-weight:800; font-size:20px; letter-spacing:-.02em; line-height:1.1; }
 .logo > span:not(.logo-mark){ display:inline-flex; flex-direction:column; gap:8px; }
@@ -344,9 +344,9 @@ a.tile:hover .more{ gap:10px; }
 @media(min-width:1024px){
   .section{ padding:104px 0; }
   .header-inner{ justify-content:flex-start; }
-  .logo{ margin-left:34px; margin-right:8px; }
-  .logo-mark img{ width:88px; height:88px; }
-  .header.scrolled .logo-mark img{ width:76px; height:76px; }
+  .logo{ margin-left:22px; margin-right:8px; }
+  .logo-mark img{ width:auto; height:96px; }
+  .header.scrolled .logo-mark img{ width:auto; height:82px; }
   .nav{ display:flex; }
   .header-cta{ display:flex; margin-left:auto; }
   .burger{ display:none; }

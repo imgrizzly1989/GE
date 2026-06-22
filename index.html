@@ -203,7 +203,7 @@ h1,h2,h3,h4{ line-height:1.05; letter-spacing:-0.02em; font-weight:800; }
 @media(min-width:768px){ .topbar{ display:block; } .hero-inner{ padding-top:240px; } }
 .logo{ display:flex; align-items:center; gap:14px; flex-shrink:0; }
 .logo-mark{ filter:drop-shadow(0 0 6px rgba(52,210,123,0)); transition:filter .5s; }
-.logo-mark img{ width:72px; height:72px; object-fit:contain; transition:width .35s var(--ease),height .35s var(--ease); }
+.logo-mark img{ width:auto; height:76px; object-fit:contain; transition:height .35s var(--ease); }
 .logo:hover .logo-mark{ filter:drop-shadow(0 0 10px rgba(52,210,123,.55)); }
 .logo-name{ font-weight:800; font-size:20px; letter-spacing:-.02em; line-height:1.1; }
 .logo > span:not(.logo-mark){ display:inline-flex; flex-direction:column; gap:8px; }
@@ -491,9 +491,9 @@ a.contact-card:hover .cv{ color:var(--leaf); }
 @media(min-width:1024px){
   .section{ padding:128px 0; }
   .header-inner{ justify-content:flex-start; }
-  .logo{ margin-left:34px; margin-right:8px; }
-  .logo-mark img{ width:88px; height:88px; }
-  .header.scrolled .logo-mark img{ width:76px; height:76px; }
+  .logo{ margin-left:22px; margin-right:8px; }
+  .logo-mark img{ width:auto; height:96px; }
+  .header.scrolled .logo-mark img{ width:auto; height:82px; }
   .nav{ display:flex; }
   .header-cta{ display:flex; margin-left:auto; }
   .burger{ display:none; }
@@ -607,7 +607,10 @@ a:focus-visible,button:focus-visible,.field:focus-visible{ outline:2px solid var
        remplacez la div .photo par :
        <img class="photo" src="hero-truck.jpg" alt="" style="object-fit:cover"> -->
   <div class="hero-bg" aria-hidden="true">
-    <div class="photo"></div>
+    <picture class="photo" style="position:absolute;inset:0;display:block">
+      <source srcset="assets/img/hero-truck.webp" type="image/webp" />
+      <img src="assets/img/hero-truck.jpg" alt="" width="1448" height="1086" fetchpriority="high" style="width:100%;height:100%;object-fit:cover;object-position:62% 50%" />
+    </picture>
     <div class="hero-grid"></div>
   </div>
   <div class="hero-overlay" aria-hidden="true"></div>
@@ -792,6 +795,14 @@ a:focus-visible,button:focus-visible,.field:focus-visible{ outline:2px solid var
           <li><span class="cdot mint"></span> Tanger Med, porte d'entrée de l'Europe</li>
           <li><span class="cdot mint"></span> Benelux &amp; Allemagne : Bruxelles, Amsterdam, Berlin</li>
         </ul>
+
+        <figure style="margin-top:32px;border-radius:18px;overflow:hidden;border:1px solid var(--line);background:linear-gradient(180deg,rgba(255,255,255,.045),rgba(255,255,255,.012))">
+          <picture>
+            <source srcset="assets/img/ferry-europe.webp" type="image/webp" />
+            <img src="assets/img/ferry-europe.jpg" alt="Semi-remorque frigorifique Garden Expresse embarqué sur le ferry à Tanger Med en direction de l'Europe" loading="lazy" width="1000" height="750" style="display:block;width:100%;height:260px;object-fit:cover;object-position:50% 55%" />
+          </picture>
+          <figcaption style="padding:12px 16px;font-size:.82rem;color:var(--muted)">Embarquement à Tanger Med — notre flotte en route vers l'Europe.</figcaption>
+        </figure>
       </div>
 
       <div class="glass card map-wrap reveal d1">
