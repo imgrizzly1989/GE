@@ -3,10 +3,11 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Garden Expresse Maroc | Transport, Logistique & Freight Forwarding</title>
+<title>Garden Expresse Maroc | Transport & Freight Forwarding</title>
 <link rel="canonical" href="https://www.gardenexpresse.com/" />
 <meta name="robots" content="index, follow, max-image-preview:large" />
-<meta name="description" content="Garden Expresse Maroc : entreprise de transport, logistique et freight forwarding à Casablanca. Transport Maroc Europe Afrique, groupage, frigorifique et devis." />
+<script>document.documentElement.classList.add('js');</script>
+<meta name="description" content="Garden Expresse organise le transport international Maroc Europe Afrique : affrètement camion, groupage, frigorifique, freight forwarding et devis depuis Casablanca." />
 <meta name="keywords" content="transporteur maroc, transport maroc europe, transport maroc afrique, transporteur maroc europe, commissionnaire de transport maroc, transport routier international maroc, fret maroc europe afrique" />
 <meta name="theme-color" content="#0A0A0B" />
 <meta property="og:title" content="Garden Expresse — Vos marchandises, notre réseau, sans frontières" />
@@ -106,7 +107,8 @@
 <!-- Police Inter (avec repli système si hors-ligne) -->
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="preload" as="image" href="/assets/img/hero-truck.webp" fetchpriority="high" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
 
 <style>
 /* =================================================================
@@ -147,6 +149,8 @@ body{
 }
 img,svg{ display:block; max-width:100%; }
 a{ color:inherit; text-decoration:none; }
+.skip-link{ position:absolute; left:16px; top:10px; z-index:999; transform:translateY(-140%); background:var(--leaf); color:#06210F; padding:10px 14px; border-radius:10px; font-weight:800; }
+.skip-link:focus{ transform:translateY(0); }
 button{ font-family:inherit; cursor:pointer; border:none; background:none; color:inherit; }
 ul{ list-style:none; }
 ::selection{ background:rgba(52,210,123,.35); color:#fff; }
@@ -478,6 +482,9 @@ a.contact-card:hover .cv{ color:var(--leaf); }
 .social:hover{ color:var(--leaf); border-color:rgba(52,210,123,.4); }
 .social svg{ width:18px; height:18px; }
 .footer-bottom{ border-top:1px solid var(--line); padding:28px 0; display:flex; flex-direction:column; gap:12px; align-items:center; text-align:center; font-size:.78rem; color:rgba(243,246,241,.45); }
+.linklist{ display:flex; flex-wrap:wrap; gap:10px 12px; max-width:980px; }
+.linklist a{ display:inline-flex; align-items:center; min-height:36px; padding:8px 12px; border:1px solid rgba(255,255,255,.12); border-radius:999px; background:rgba(255,255,255,.025); color:rgba(243,246,241,.74); font-size:.9rem; line-height:1.25; transition:border-color .25s, color .25s, background .25s; }
+.linklist a:hover{ border-color:rgba(52,210,123,.48); background:rgba(52,210,123,.08); color:var(--leaf2); }
 
 /* =================================================================
    TOAST
@@ -519,8 +526,9 @@ a.contact-card:hover .cv{ color:var(--leaf); }
 /* =================================================================
    RÉVÉLATION AU SCROLL
 ================================================================= */
-.reveal{ opacity:0; transform:translateY(34px); transition:opacity .9s var(--ease),transform .9s var(--ease); }
-.reveal.in{ opacity:1; transform:none; }
+.reveal{ opacity:1; transform:none; }
+.js .reveal{ opacity:1; transform:none; transition:none; }
+.js .reveal.in{ opacity:1; transform:none; }
 .reveal.d1{ transition-delay:.08s; } .reveal.d2{ transition-delay:.16s; }
 .reveal.d3{ transition-delay:.24s; } .reveal.d4{ transition-delay:.32s; }
 
@@ -563,7 +571,7 @@ a:focus-visible,button:focus-visible,.field:focus-visible{ outline:2px solid var
 
 @media (prefers-reduced-motion:reduce){
   *{ animation:none !important; transition-duration:.001ms !important; }
-  .reveal{ opacity:1; transform:none; }
+  .js .reveal{ opacity:1; transform:none; }
 }
 </style>
 <!-- Google tag (gtag.js) -->
@@ -578,6 +586,7 @@ a:focus-visible,button:focus-visible,.field:focus-visible{ outline:2px solid var
 </head>
 
 <body>
+<a class="skip-link" href="#main">Aller au contenu principal</a>
 
 <!-- Halos d'ambiance -->
 <div class="ambient" aria-hidden="true">
@@ -614,7 +623,7 @@ a:focus-visible,button:focus-visible,.field:focus-visible{ outline:2px solid var
     <!-- ⚑ LOGO : pour utiliser votre PNG, remplacez le <svg> par
          <img src="logo.png" alt="Garden Expresse" style="height:40px;width:auto"> -->
     <a href="#hero" class="logo">
-      <span class="logo-mark"><img src="assets/logo.png" alt="Garden Expresse" width="64" height="64" /></span>
+      <span class="logo-mark"><img src="assets/logo.webp" alt="Garden Expresse" width="64" height="64" /></span>
       
     </a>
 
@@ -654,6 +663,7 @@ a:focus-visible,button:focus-visible,.field:focus-visible{ outline:2px solid var
   </div>
 </header>
 
+<main id="main">
 <!-- ================= 1. HERO ================= -->
 <section class="hero" id="hero">
   <!-- ⚑ IMAGE HERO : pour ajouter la photo drone du camion Volvo blanc,
@@ -678,15 +688,14 @@ a:focus-visible,button:focus-visible,.field:focus-visible{ outline:2px solid var
       </span>
 
       <h1 class="h1 reveal d1">
-        Vos marchandises.<br />
-        <span class="text-gradient">Notre réseau.</span><br />
-        Sans frontières.
+        Transport international<br />
+        <span class="text-gradient">Maroc Europe Afrique.</span>
       </h1>
 
       <p class="reveal d2">
-        Transporteur routier et commissionnaire de transport. Nous opérons notre propre flotte sur les
-        corridors Maroc–Europe–Afrique et connectons chargeurs et transporteurs avec des offres comparées grâce à
-        notre bourse de fret. Une charge à expédier ? Un camion disponible ? Nous faisons le lien.
+        Garden Expresse organise le transport routier international, l’affrètement camion, le groupage,
+        le transport frigorifique et le freight forwarding depuis Casablanca vers l’Europe et l’Afrique.
+        Une charge à expédier ? Un camion disponible ? Nous faisons le lien.
       </p>
 
       <div class="hero-ctas reveal d3">
@@ -1113,7 +1122,7 @@ a:focus-visible,button:focus-visible,.field:focus-visible{ outline:2px solid var
   <div class="container footer-inner">
     <div class="footer-brand">
       <a href="#hero" class="logo">
-        <span class="logo-mark"><img src="assets/logo.png" alt="Garden Expresse" width="64" height="64" /></span>
+        <span class="logo-mark"><img src="assets/logo.webp" alt="Garden Expresse" width="64" height="64" /></span>
         <span class="logo-name">Garden Expresse</span>
       </a>
       <p>Transporteur routier &amp; commissionnaire de transport. Nous connectons charges et camions, du Maroc à l'Europe et l'Afrique, au tarif adapté.</p>
